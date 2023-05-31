@@ -92,6 +92,10 @@
     }
     console.log(calculateTip(0.20, 20));
 
+
+
+
+
     /**
      * TODO:
      * Use prompt and alert in combination with your calculateTip function to
@@ -103,6 +107,14 @@
     // let userTipPercentage = prompt("What percentage would you like to tip on your bill?");
     // let userShouldTipAmount = alert("Your total tip amount is " + userBillAmount * (userTipPercentage/100));
     // console.log(userShouldTipAmount);
+
+    const userTipPercentage = (parseFloat(prompt("How much would you like to tip asa  whole percentage number?")))/100;
+    const userBillTotal = parseFloat(prompt("How much does your total bill cost?"));
+
+    let userTip = calculateTip(userTipPercentage, userBillTotal);
+
+    alert(`You should tip$${calculateTip(userTipPercentage, userBillTotal)}`);
+
 
     /**
      * TODO:
@@ -119,11 +131,16 @@
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
 
-    function applyDiscount(originalPrice, discountPercent){
-        return originalPrice - (originalPrice * discountPercent)
-    }
-    console.log(applyDiscount(100, 0.6));
+    // function applyDiscount(originalPrice, discountPercent){
+    //     return originalPrice - (originalPrice * discountPercent)
+    // }
+    // console.log(applyDiscount(100, 0.6));
 
+    const applyDiscount = (originalPrice, discountPercentage) => {
+            return originalPrice - (originalPrice * discountPercentage)
+        }
+
+        console.log(applyDiscount(45.99, 0.12));
 
 </script>
 
