@@ -84,3 +84,4 @@ if  (userExpiredResponse === false) {
 } else {
     alert("The item does not qualify for the discount.");
 }
+
