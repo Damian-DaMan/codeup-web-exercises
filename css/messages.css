@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    padding: 10px;
+    margin: 5px;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+.lavender {
+    background-color: lavender;
+    color: rebeccapurple;
+}
+
+.lime {
+    background-color: lightgreen;
+    color: forestgreen;
+}
+
+.yellow {
+    background-color: lightyellow;
+    color: #aab023;
+}
+
+.red {
+    background-color: pink;
+    color: red;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
