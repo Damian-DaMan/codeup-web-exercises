@@ -1,4 +1,49 @@
+/* Any variables in the root can be accessed by
+anything in the style sheet. These are not bound
+ to children in html */
+
+:root {
+    --red: #ff0000;
+}
+
 .fancy-header {
-    color: purple; /* single line comment */
+    color: var(--red); /* single line comment */
     text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    background-image: url("../background.png");
+}
+
+ul>li {
+    list-style-type: circle;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 1px;
+    background-color: aqua;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:visited {
+    color: green;
+}
+
+a:link {
+    color: red;
+}
+
+a:active {
+    color: blue;
 }
