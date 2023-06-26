@@ -1,0 +1,740 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="author" content="">
+    <link href="https://www.papamurphys.com/instructions/baking-thin-crust-xlny-pizza/" rel="canonical" />
+    <title>Papa Murphy&#x27;s XLNY Baking Instructions</title>
+    <meta name="description" content="Your next Papa Murphy&#x27;s XLNY pizza is just 3 steps away from store to table. Follow our effortless baking instructions for the perfect pizza pie.">
+
+    <link rel="preconnect" href="https://use.typekit.net">
+
+
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script 
+        src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" 
+        type="text/javascript" 
+        charset="UTF-8" 
+        data-domain-script="6c80cf17-7954-4b53-8b98-dc43f8146487">
+    </script>
+        <script type="text/javascript">
+            sessionStorage.removeItem('PMI_mParticleInitializedFirstTime'); 
+
+            const mParticleInitalizer = (performanceTrackingEnabled) => {
+                if (performanceTrackingEnabled) {
+                    //configure the SDK
+                    window.mParticle = {
+                        config: {
+                            isDevelopmentMode: false,
+                            appName: 'Papa Murphys New',
+                            appVersion: 'Prod Marketing Site'
+                        }
+                    };
+    
+                    //load the SDK
+                    (function(t){window.mParticle=window.mParticle||{};window.mParticle.EventType={Unknown:0,Navigation:1,Location:2,Search:3,Transaction:4,UserContent:5,UserPreference:6,Social:7,Other:8};window.mParticle.eCommerce={Cart:{}};window.mParticle.Identity={};window.mParticle.config=window.mParticle.config||{};window.mParticle.config.rq=[];window.mParticle.config.snippetVersion=2.3;window.mParticle.ready=function(t){window.mParticle.config.rq.push(t)};var e=["endSession","logError","logBaseEvent","logEvent","logForm","logLink","logPageView","setSessionAttribute","setAppName","setAppVersion","setOptOut","setPosition","startNewSession","startTrackingLocation","stopTrackingLocation"];var o=["setCurrencyCode","logCheckout"];var i=["identify","login","logout","modify"];e.forEach(function(t){window.mParticle[t]=n(t)});o.forEach(function(t){window.mParticle.eCommerce[t]=n(t,"eCommerce")});i.forEach(function(t){window.mParticle.Identity[t]=n(t,"Identity")});function n(e,o){return function(){if(o){e=o+"."+e}var t=Array.prototype.slice.call(arguments);t.unshift(e);window.mParticle.config.rq.push(t)}}var dpId,dpV,config=window.mParticle.config,env=config.isDevelopmentMode?1:0,dbUrl="?env="+env,dataPlan=window.mParticle.config.dataPlan;dataPlan&&(dpId=dataPlan.planId,dpV=dataPlan.planVersion,dpId&&(dpV&&(dpV<1||dpV>1e3)&&(dpV=null),dbUrl+="&plan_id="+dpId+(dpV?"&plan_version="+dpV:"")));var mp=document.createElement("script");mp.type="text/javascript";mp.async=true;mp.src=("https:"==document.location.protocol?"https://jssdkcdns":"http://jssdkcdn")+".mparticle.com/js/v2/"+t+"/mparticle.js" + dbUrl;var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(mp,c)}
+                    )("us1-eefe0f9e52d1e24db889629a7bfccfe3");
+                } else {
+                    window.mParticle = undefined;
+                }
+            }
+    
+            // Required OneTrust Callback
+            function OptanonWrapper() { 
+                window.dataLayer = window.dataLayer || [];
+                const performanceCookieValue = document.cookie.split("OptanonConsent").pop().split(';')[0].split('C0002%3A').pop().split('%')[0];
+                // Need to check that cookie has 0 or 1 value for performance tracking (C0002), else it hasn't fully been created yet
+                const cookieHasPerformanceValue = performanceCookieValue === '0' || performanceCookieValue === '1'; 
+    
+                // OneTrust consent groups take a second to load into the window data layer, so we want
+                // to check the cookie if it's available, else check the OneTrust consent groups
+                if (document.cookie.includes("OptanonConsent") && cookieHasPerformanceValue) {
+                    const performanceCookieValue = document.cookie.split("OptanonConsent").pop().split(';')[0].split('C0002%3A').pop().split('%')[0];
+                    const performanceCookiesEnabled = true ? performanceCookieValue === '1' : false;
+    
+                    mParticleInitalizer(performanceCookiesEnabled);
+                    sessionStorage.removeItem('PMI_mParticleInitializedFirstTime'); 
+                } else if (!sessionStorage.getItem('PMI_mParticleInitializedFirstTime')) {
+                    let oneTrustLoadedData = window.dataLayer.filter((dataObj) => dataObj.event === 'OneTrustLoaded');
+                    let counter = 0;
+
+                    // We need to identify that this code has already been executed, else this function may
+                    // execute this block of code again and log a second page view event when called back
+                    sessionStorage.setItem('PMI_mParticleInitializedFirstTime', 'true');
+    
+                    // OneTrust consent groups take a second to load, check the data layer every second to see if it has loaded yet,
+                    // if it has loaded, intialize mParticle with the performance tracking (C0002) value and log the page view event
+                    const checkIfOneTrustHasLoaded = () => {
+                        oneTrustLoadedData = window.dataLayer.filter((dataObj) => dataObj.event === 'OneTrustLoaded');
+                        counter++;
+                        
+                        if (oneTrustLoadedData.length > 0) {
+                            const mostRecentEvent = oneTrustLoadedData.pop();
+                            const performanceTrackingEnabled = mostRecentEvent.OnetrustActiveGroups.includes('C0002');
+    
+                            clearInterval(interval);
+                            mParticleInitalizer(performanceTrackingEnabled);
+                            mParticle?.logPageView(
+                                document.title,
+                                { page_url: window.location.toString() },
+                                {
+                                    'Google.Location': window.location.toString(),
+                                    'Google.DocumentReferrer': document.referrer,
+                                }
+                            );
+                             mParticle.logEvent(
+                                  document.title,
+                                  mParticle.EventType.Other,
+                                  {
+                                      'DocumentReferrer': document.referrer,
+                                      'EventCategory': 'Facebook'
+                                  },
+                                  {
+                                      "Facebook.EventSourceUrl":window.location.toString()
+                                  }
+                             );
+                        } 
+    
+                        // if OneTrust is not loading, clear interval and do not initialize mParticle
+                        // set counter high to account for slow connections
+                        if (counter >= 30) {
+                            clearInterval(interval);
+                        }
+                    };
+    
+                    const interval = setInterval(checkIfOneTrustHasLoaded, 1000);
+                }
+    
+                // If user clicked on Do Not Sell My Info button to open modal, return focus back to button after changes are saved and modal closes
+                if (window.localStorage.getItem('oneTrustButtonClicked') && document.getElementById('footer-onetrust-btn')) {
+                    document.getElementById('footer-onetrust-btn').focus();
+                    window.localStorage.removeItem('oneTrustButtonClicked');
+                }
+            }
+    
+            // Function call needed so mParticle initializes before the analytics scripts are executed
+            OptanonWrapper();
+        </script>
+    <!-- OneTrust Cookies Consent Notice end -->
+
+    <link rel="preload" href="/vendors.js?ver=2021.11.0.0" as="script">
+
+    <script type="text/javascript">!function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+crossOrigin: "anonymous", 
+cfg: { // Application Insights Configuration
+    instrumentationKey: '1e30b0b8-21ec-4691-b100-7de2db30da83'
+}});</script>
+    <link rel="preload" href="/index.css?ver=2021.11.0.0" as="style">
+    <link rel="preload" href="/index.js?ver=2021.11.0.0" as="script">
+    <link rel="stylesheet" href="https://use.typekit.net/axq1nkz.css">
+    <link rel="stylesheet" href="/index.css?ver=2021.11.0.0" type="text/css">
+
+
+
+
+    <script src="https://cdn.optimizely.com/js/20758793323.js"></script>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/imgs/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/imgs/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/imgs/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/imgs/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/imgs/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/imgs/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/imgs/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/imgs/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/imgs/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/imgs/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/imgs/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/imgs/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/imgs/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/imgs/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/imgs/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/imgs/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/imgs/favicon/apple-touch-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/apple-touch-icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/imgs/favicon/apple-touch-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/apple-touch-icon-16x16.png">
+    <link rel="icon" type="image/png" href="/imgs/favicon/apple-touch-icon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/imgs/favicon/apple-touch-icon-128x128.png" sizes="128x128" />
+    <link rel="manifest" href="/imgs/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/imgs/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/imgs/favicon/ms-icon-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/imgs/favicon/ms-icon-150x150.png" />
+    <meta name="msapplication-square310x310logo" content="/imgs/favicon/ms-icon-310x310.png" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Papa Murphy's">
+    <link rel="shortcut icon" href="/imgs/favicon/favicon.ico" type="image/x-icon" />
+
+
+</head>
+
+<body>
+    <div class="layout-wrapper">
+        <div class="layout-content">
+            
+
+
+            
+
+<a class="button skip-link" href="#main-content" data-cy="homepage-skip-link">Skip to page content</a>
+<span id="order-confirmation"></span>
+<header class="header">
+    <div class="header__outer">
+        <div class="header__inner flex-grow">
+            <button type="button" class="hamburger invisible md:visible lg:hidden js-trigger-flyout" aria-label="Open Navigation" data-open-label="Open Navigation" data-close-label="Close Navigation" data-cy="header-hamburger"><span></span></button>
+            <a href="/" class="header__logo" aria-label="Papa Murphy's Home Page" data-cy="header-logo">
+<svg width="157" height="60" viewBox="0 0 157 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="156.906" height="60" fill="url(#pattern0)"/>
+    <path d="M80.2524 54.653C79.8096 54.653 79.2931 54.653 78.8504 54.653C55.6067 54.5795 31.9203 52.8148 8.38151 49.5059L5.42993 49.0648L5.57751 10.7559L8.4553 10.3148C31.5514 6.9324 54.7212 5.16769 77.3008 5.16769C77.8173 5.16769 78.4076 5.16769 78.9242 5.16769C102.168 5.24122 125.633 7.07946 148.581 10.6824L151.459 11.1236L151.312 49.3589L148.434 49.8001C125.928 53.1089 102.98 54.653 80.2524 54.653Z" fill="#DA291C"/>
+    <path d="M77.3003 6.56425C77.8168 6.56425 78.4071 6.56425 78.9236 6.56425C102.094 6.63778 125.485 8.47602 148.359 12.079L150.13 12.3731L150.057 48.4025L148.286 48.6231C125.854 51.7848 102.979 53.4025 80.2518 53.4025C79.8091 53.4025 79.2926 53.4025 78.8498 53.4025C55.68 53.329 32.0674 51.6378 8.60235 48.2554L6.75762 47.9613L6.83141 11.8584L8.60235 11.5643C31.5509 8.25543 54.6469 6.56425 77.3003 6.56425ZM77.3003 3.99072C54.6469 3.99072 31.4033 5.75543 8.2334 9.13778L6.46246 9.4319L4.24878 9.72602V11.9319L4.17499 48.0348V50.2407L6.38867 50.5348L8.2334 50.829C31.7722 54.2113 55.5324 55.976 78.8498 55.976C79.2926 55.976 79.8091 55.976 80.2518 55.976C103.053 55.976 126.075 54.3584 148.655 51.1966L150.426 50.976L152.639 50.6819V48.476L152.713 12.4466V10.2407L150.573 9.87308L148.802 9.57896C125.78 5.97602 102.241 4.06425 78.9236 3.99072C78.4071 3.99072 77.8168 3.99072 77.3003 3.99072Z" fill="white"/>
+    <path d="M51.9904 19.3584H48.6699C48.4486 19.3584 48.301 19.5055 48.2272 19.6525L44.9804 36.5643C44.9804 36.6378 44.9804 36.7849 45.0542 36.8584C45.128 36.9319 45.2018 37.0055 45.3494 37.0055H47.6369C47.8582 37.0055 48.0058 36.8584 48.0796 36.6378L48.5223 34.2849C48.5223 34.2113 48.5961 34.1378 48.6699 34.0643C49.9981 33.1084 51.5477 32.9613 51.5477 32.9613C51.6215 32.9613 51.6953 33.0349 51.6953 33.0349L52.2856 36.6378C52.2856 36.8584 52.507 37.0055 52.7283 37.0055H55.2372C55.3848 37.0055 55.4585 36.9319 55.5323 36.8584C55.6061 36.7849 55.6061 36.7113 55.6061 36.5643L52.3594 19.6525C52.3594 19.5055 52.2118 19.3584 51.9904 19.3584ZM48.9651 30.976L50.0719 23.8437C50.0719 23.7702 50.2195 23.7702 50.2195 23.8437L51.1788 30.0202C51.1788 30.0937 51.1788 30.1672 51.0312 30.2408C51.0312 30.2408 49.9981 30.4613 48.9651 31.1231C49.0389 31.1231 48.9651 31.0496 48.9651 30.976ZM45.7183 23.7702C45.7183 20.9025 44.095 19.3584 41.0696 19.3584H36.8636C36.6422 19.3584 36.4947 19.5055 36.4947 19.726V33.8437C36.4947 35.3143 36.5685 35.7555 36.716 36.0496C37.0112 36.4908 37.3801 36.9319 38.7083 36.9319H39.3725C39.5938 36.9319 39.7414 36.7849 39.7414 36.5643V31.4172C39.7414 31.3437 39.8152 31.2702 39.889 31.2702L41.0696 31.0496C44.0212 30.5349 45.7183 28.5496 45.7183 25.4613V23.7702ZM39.6676 22.2996C39.6676 22.226 39.7414 22.1525 39.8152 22.1525H41.0696C41.8813 22.1525 42.3978 22.3731 42.3978 23.6231V25.6819C42.3978 27.3731 41.9551 28.2555 40.9958 28.4025L39.7414 28.5496C39.6676 28.5496 39.5938 28.476 39.5938 28.4025L39.6676 22.2996ZM25.7214 23.7702C25.7214 20.9025 24.0981 19.3584 21.0727 19.3584L16.8667 19.4319C16.6453 19.4319 16.4977 19.579 16.4977 19.7996V33.9172C16.4977 35.3878 16.5715 35.829 16.7191 36.1231C17.0143 36.5643 17.3832 37.0055 18.7114 37.0055H19.3755C19.5969 37.0055 19.7445 36.8584 19.7445 36.6378V31.5643C19.7445 31.4908 19.8183 31.4172 19.8921 31.3437L21.0727 31.1231C24.0243 30.6084 25.7214 28.6231 25.7214 25.5349V23.7702ZM19.6707 22.226C19.6707 22.1525 19.7445 22.079 19.8183 22.079H21.0727C21.8844 22.079 22.4009 22.2996 22.4009 23.5496V25.6084C22.4009 27.2996 21.9582 28.1819 20.9989 28.329L19.8183 28.5496C19.7445 28.5496 19.6707 28.476 19.6707 28.4025V22.226ZM37.5277 38.329C36.8636 38.2555 36.2733 37.8878 36.0519 37.4466C35.9044 37.226 35.683 36.4908 35.3878 35.1672L32.4363 19.726C32.4363 19.5055 32.2149 19.4319 31.9935 19.4319H28.673C28.4516 19.4319 28.304 19.579 28.2303 19.726L24.9835 36.6378C24.9835 36.7113 24.9835 36.8584 25.0573 36.9319C25.1311 37.0055 25.2049 37.079 25.3525 37.079H27.6399C27.8613 37.079 28.0089 36.9319 28.0827 36.7113L28.5254 34.3584C28.5254 34.2849 28.5992 34.2113 28.673 34.1378C30.075 33.1819 31.5508 33.0349 31.5508 33.0349C31.6246 33.0349 31.6984 33.1084 31.6984 33.1084C31.6984 33.1084 32.4363 37.3731 32.4363 37.5202C32.5838 38.1819 32.879 38.5496 33.1741 38.8437C33.6907 39.2849 34.5024 39.579 35.3878 39.579C35.9781 39.579 36.4947 39.4319 36.9374 39.2849C37.2326 39.1378 37.4539 38.9172 37.6015 38.6966L37.6753 38.5496L37.5277 38.329ZM31.108 30.1672C31.108 30.1672 30.075 30.3878 29.0419 31.0496C28.9682 31.0496 28.9682 31.0496 28.9682 30.976L30.1488 23.8437C30.1488 23.7702 30.2964 23.7702 30.2964 23.8437L31.2556 30.0202C31.2556 30.0937 31.1818 30.1672 31.108 30.1672ZM130.06 20.7555C129.764 20.829 129.543 20.7555 129.764 20.4613C130.502 19.3584 129.838 19.2849 129.543 18.6231C129.248 17.9613 129.617 16.9319 130.576 16.6378C131.462 16.4172 132.052 17.0055 132.273 17.5937C132.568 18.7702 131.314 20.3143 130.06 20.7555ZM117.442 20.2407C117.737 20.6084 117.663 21.0496 117.663 23.1084C117.663 23.6966 117.663 36.6378 117.663 36.6378C117.663 36.8584 117.442 37.0055 117.294 37.0055H114.785C114.564 37.0055 114.416 36.8584 114.416 36.6378V29.579C114.416 29.5055 114.342 29.4319 114.269 29.4319C114.269 29.4319 112.719 29.579 111.465 30.5349C111.391 30.6084 111.317 30.6084 111.317 30.7555V36.6378C111.317 36.8584 111.17 37.0055 110.948 37.0055H108.366C108.144 37.0055 107.997 36.8584 107.997 36.6378V19.726C107.997 19.5055 108.144 19.3584 108.366 19.3584H110.874C111.096 19.3584 111.243 19.5055 111.243 19.726V27.3731C111.243 27.4466 111.317 27.5202 111.391 27.4466C112.793 26.4172 114.195 26.1966 114.195 26.1966C114.342 26.1966 114.342 26.0496 114.342 25.976V19.726C114.342 19.5055 114.49 19.3584 114.711 19.3584H115.376C116.704 19.3584 117.146 19.7996 117.442 20.2407ZM128.953 19.5055C129.027 19.579 129.027 19.6525 128.953 19.7996L125.337 29.5055V33.8437V36.5643C125.337 36.7849 125.19 36.9319 124.968 36.9319H122.459C122.238 36.9319 122.09 36.7849 122.09 36.5643V29.4319L120.836 26.0496C120.762 25.829 118.622 19.9466 118.327 19.4319C118.032 18.9907 117.442 18.476 116.556 18.4025C117.073 17.3731 118.696 17.079 120.024 17.4466C121.352 17.8878 121.574 18.8437 122.017 19.9466C122.312 20.6084 123.419 24.2113 123.861 25.5349L125.78 19.726C125.854 19.579 126.075 19.4319 126.223 19.4319H128.658C128.805 19.3584 128.879 19.4319 128.953 19.5055ZM102.167 19.3584H97.9612C97.7399 19.3584 97.5923 19.5055 97.5923 19.726V33.8437C97.5923 35.3143 97.6661 35.7555 97.8137 36.0496C98.1088 36.4908 98.4778 36.9319 99.806 36.9319H100.47C100.691 36.9319 100.839 36.7849 100.839 36.5643V31.4172C100.839 31.3437 100.913 31.2702 100.987 31.2702L102.167 31.0496C105.119 30.5349 106.816 28.476 106.816 25.4613V23.7702C106.816 20.9025 105.266 19.3584 102.167 19.3584ZM100.765 22.226C100.765 22.1525 100.839 22.079 100.913 22.079H102.167C102.979 22.079 103.495 22.2996 103.495 23.5496V25.6084C103.495 27.2996 103.053 28.1819 102.093 28.329L100.839 28.5496C100.765 28.5496 100.691 28.476 100.691 28.4025L100.765 22.226ZM140.464 32.2996C140.538 35.4613 138.545 37.1525 135.52 37.1525C132.568 37.1525 130.871 35.3878 130.871 32.6672V31.9319C130.871 31.7113 131.019 31.5643 131.24 31.5643H133.602C133.823 31.5643 133.97 31.7113 133.97 31.9319V32.5937C133.97 33.8437 134.635 34.579 135.668 34.579C136.701 34.579 137.291 33.6966 137.291 32.5937C137.291 31.3437 136.406 30.4613 134.561 28.9908C131.978 27.0055 131.093 25.3878 131.093 23.329C131.093 20.9025 132.79 19.0643 135.741 19.0643C138.545 19.0643 140.095 20.6084 140.169 22.4466C140.243 24.9466 137.955 25.2407 136.774 24.7996C136.996 24.6525 137.217 24.1378 137.217 23.476C137.217 22.6672 136.627 21.7849 135.668 21.7849C134.708 21.7849 134.192 22.4466 134.192 23.329C134.192 24.5055 135.004 25.3143 136.996 26.9319C139.357 28.8437 140.39 30.3143 140.464 32.2996ZM85.1957 19.726V32.6672C85.1957 35.5349 83.4985 37.1525 80.3994 37.1525C77.3002 37.1525 75.6031 35.5349 75.6031 32.6672V19.726C75.6031 19.5055 75.7506 19.3584 75.972 19.3584H78.4808C78.7022 19.3584 78.8498 19.5055 78.8498 19.726V32.8878C78.8498 33.9172 79.3663 34.4319 80.3994 34.4319C81.2848 34.4319 81.8752 34.1378 81.8752 32.8878V19.726C81.8752 19.5055 82.0227 19.3584 82.2441 19.3584H84.7529C85.0481 19.3584 85.1957 19.579 85.1957 19.726ZM97.002 37.0055C96.7068 36.5643 94.5669 30.5349 94.3456 29.9466C95.6 29.2113 96.1903 27.8878 96.1903 26.0496V23.7702C96.1903 20.9025 94.5669 19.3584 91.5416 19.3584H87.3356C87.1142 19.3584 86.9666 19.5055 86.9666 19.726V32.5937V36.5643C86.9666 36.7849 87.1142 36.9319 87.3356 36.9319H89.8444C90.0658 36.9319 90.2133 36.7849 90.2133 36.5643V30.7555C90.2133 30.6819 90.2871 30.6084 90.3609 30.6084H91.1726C91.2464 30.6084 91.3202 30.6819 91.3202 30.7555C91.3202 30.7555 93.2387 36.5643 93.3125 36.7113C93.4601 37.1525 93.6815 37.5937 93.9766 37.9613C94.4931 38.6231 95.3048 38.9908 96.3379 38.9908C96.9282 38.9908 98.2564 38.8437 98.6253 37.8878C97.9612 37.8878 97.2971 37.5202 97.002 37.0055ZM90.2133 22.226C90.2133 22.1525 90.2871 22.079 90.3609 22.079H91.6154C92.427 22.079 92.9436 22.2996 92.9436 23.5496V26.4172C92.9436 27.6672 92.427 27.8878 91.6154 27.8878H90.3609C90.2871 27.8878 90.2133 27.8143 90.2133 27.7408V22.226ZM63.1326 25.6084V36.6378C63.1326 36.8584 62.9851 37.0055 62.7637 37.0055H60.55C60.3286 37.0055 60.1811 36.8584 60.1811 36.6378V19.726C60.1811 19.5055 60.3286 19.3584 60.55 19.3584H64.3871C64.6084 19.3584 64.756 19.5055 64.8298 19.726L67.1173 30.4613L69.4047 19.726C69.4785 19.5055 69.6261 19.3584 69.8475 19.3584H73.3894C73.6845 19.3584 73.9059 19.5055 73.9059 19.7996V36.5643C73.9059 36.7849 73.7583 36.9319 73.4632 36.9319H71.2495C71.0281 36.9319 70.8805 36.7849 70.8805 36.5643V25.5349L68.4455 36.5643C68.3717 36.7849 68.2241 36.9319 68.0027 36.9319H66.0842C65.8628 36.9319 65.7153 36.7849 65.6415 36.5643L63.1326 25.6084Z" fill="white"/>
+    <path d="M44.3902 40.976V42.079H42.693V45.6084H41.3648V42.079H39.6677V40.976H44.3902ZM47.6369 44.7996H45.497L45.2019 45.5349H43.8737L45.866 40.9025H47.3418L49.3341 45.5349H47.9321L47.6369 44.7996ZM45.866 43.9172H47.268L46.5301 42.226L45.866 43.9172ZM51.7691 43.7701L51.105 44.5054V45.5349H49.7768V40.976H51.105V43.1084L52.876 40.976H54.4993L52.6546 42.8878C53.2449 43.6966 54.4993 45.5349 54.4993 45.5349H53.0235L51.7691 43.7701ZM59.2219 40.976V42.0054H56.4179V42.8143H58.5577V43.6966H56.4179V44.579H59.2219V45.6084H55.0896V41.0496H59.2219V40.976ZM61.4355 43.329V42.5201C61.4355 41.5643 61.8783 41.1231 62.7637 40.976V41.2701C62.2472 41.5643 62.1734 41.7113 62.1734 42.226H62.69V43.329H61.4355ZM64.7561 40.976L66.9697 43.6966V40.976H68.1504V45.5349H66.8959L64.6823 42.7407V45.5349H63.5016V40.976H64.7561ZM70.1427 40.976V41.7849C70.1427 42.7407 69.6999 43.1819 68.8145 43.329V43.0349C69.331 42.7407 69.4048 42.5937 69.4048 42.079H68.8883V40.976H70.1427ZM75.0128 40.976C76.1196 40.976 76.7099 41.4907 76.7099 42.1525C76.7099 42.7407 76.341 43.0349 75.8245 43.1819C76.4886 43.329 76.7837 43.6966 76.7837 44.2849C76.7837 45.0201 76.1934 45.5349 75.0866 45.5349H72.3564V40.976H75.0128ZM73.6108 42.8143H74.7914C75.2341 42.8143 75.4555 42.6672 75.4555 42.3731C75.4555 42.079 75.2341 41.9319 74.8652 41.9319H73.6108V42.8143ZM73.6108 44.6525H74.8652C75.2341 44.6525 75.4555 44.4319 75.4555 44.2113C75.4555 43.9172 75.2341 43.6966 74.7914 43.6966H73.6108V44.6525ZM80.7683 44.7996H78.6285L78.3333 45.5349H77.0051L78.9974 40.9025H80.4732L82.4655 45.5349H81.0635L80.7683 44.7996ZM78.9236 43.9172H80.3256L79.5877 42.226L78.9236 43.9172ZM84.8268 43.7701L84.1627 44.5054V45.5349H82.8345V40.976H84.1627V43.1084L85.9336 40.976H87.557L85.7122 42.8878C86.3026 43.6966 87.557 45.5349 87.557 45.5349H86.0074L84.8268 43.7701ZM92.2795 40.976V42.0054H89.4755V42.8143H91.6154V43.6966H89.4755V44.579H92.2795V45.6084H88.1473V41.0496H92.2795V40.976ZM97.5185 40.976C98.6992 40.976 99.4371 41.5643 99.4371 42.5201C99.4371 43.5496 98.6992 44.1378 97.4448 44.1378H96.3379V45.5349H95.0835V40.976H97.5185ZM96.4117 43.1819H97.2972C97.8875 43.1819 98.1089 42.9613 98.1089 42.5937C98.1089 42.226 97.8875 42.0054 97.2972 42.0054H96.3379V43.1819H96.4117ZM101.282 40.976V45.5349H99.9536V40.976H101.282ZM106.521 40.976V41.6378L103.938 44.4319H106.521V45.5349H102.02V44.8731L104.676 42.0054H102.167V40.976H106.521ZM111.391 40.976V41.6378L108.808 44.4319H111.391V45.5349H106.89V44.8731L109.546 42.0054H107.037V40.976H111.391ZM115.376 44.7996H113.236L112.941 45.5349H111.612L113.605 40.9025H115.08L117.073 45.5349H115.745L115.376 44.7996ZM113.605 43.9172H115.007L114.269 42.226L113.605 43.9172Z" fill="white"/>
+    <path d="M142.161 34.4319V35.6819H141.792V34.4319H141.349V34.1378H142.604V34.4319H142.161ZM143.563 35.2407L143.12 34.6525V35.6084H142.825V34.0643H143.047L143.637 34.7996L144.227 34.0643H144.449V35.6084H144.153V34.6525L143.563 35.2407Z" fill="white"/>
+    <defs>
+      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_3:29" transform="scale(0.00112108 0.00289017)"/>
+      </pattern>
+      <image id="image0_3:29" width="892" height="346" xlink:href="data:image/png;base64,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"/>
+  </defs>
+</svg>
+            </a>
+            <nav class="header__navigation" aria-labelledby="main-nav">
+                <p id="main-nav" class="sr-only">Site Navigation</p>
+                <ul data-cy="main-navigation">
+                            <li>
+                                <a href=https://www.papamurphys.com/menu/ data-cy="primary-nav-link">
+                                    MENU
+                                </a>
+                            </li>
+                            <li>
+                                <a href=https://www.papamurphys.com/myslice-rewards/ data-cy="primary-nav-link">
+                                    REWARDS
+                                </a>
+                            </li>
+                            <li>
+                                <a href=https://www.papamurphys.com/take-n-bake/ data-cy="primary-nav-link">
+                                    TAKE &#x27;N&#x27; BAKE
+                                </a>
+                            </li>
+                            <li class="sub-nav__4 sub-nav__container relative flex items-center">
+                                    <span >
+                                        MORE
+                                    </span>
+                                
+                                <button aria-expanded="false" aria-label="MORE Sub Navigation" aria-controls="sub-nav__4" class="text-modernslate ml-0.5"><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.41 0.0899658L6 4.66997L10.59 0.0899658L12 1.49997L6 7.49997L0 1.49997L1.41 0.0899658Z" fill="currentColor"/>
+</svg>
+</button>
+                                <ul id="sub-nav__4" class="sub-nav__menu hidden absolute bg-grayLight rounded-10 px-0.75 py-0.25 flex-col">
+                                        <li class="sub-nav__item">
+                                            <a class="sub-nav__link body-1 -bold hover:bg-white focus:bg-white rounded-5 my-0.5" href=https://www.papamurphys.com/delivery/ data-cy="primary-sub-nav-link">
+                                                Delivery
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav__item">
+                                            <a class="sub-nav__link body-1 -bold hover:bg-white focus:bg-white rounded-5 my-0.5" href=https://www.papamurphys.com/instructions/ data-cy="primary-sub-nav-link">
+                                                Baking Instructions
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav__item">
+                                            <a class="sub-nav__link body-1 -bold hover:bg-white focus:bg-white rounded-5 my-0.5" href=https://www.papamurphys.com/hub-of-hacks/ data-cy="primary-sub-nav-link">
+                                                Hub of Hacks
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav__item">
+                                            <a class="sub-nav__link body-1 -bold hover:bg-white focus:bg-white rounded-5 my-0.5" href=https://www.papamurphys.com/calzones-product-feature/ data-cy="primary-sub-nav-link">
+                                                NEW Calzones
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav__item">
+                                            <a class="sub-nav__link body-1 -bold hover:bg-white focus:bg-white rounded-5 my-0.5" href=https://www.papamurphys.com/meatballs-product-feature/ data-cy="primary-sub-nav-link">
+                                                Meatballs &amp; Marinara
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav__item">
+                                            <a class="sub-nav__link body-1 -bold hover:bg-white focus:bg-white rounded-5 my-0.5" href=https://www.papamurphys.com/mediyum-value/ data-cy="primary-sub-nav-link">
+                                                $6.99 mediYUM
+                                            </a>
+                                        </li>
+                                        <li class="sub-nav__item">
+                                            <a class="sub-nav__link body-1 -bold hover:bg-white focus:bg-white rounded-5 my-0.5" href=https://www.papamurphys.com/dairy-free-cheese-product-feature/ data-cy="primary-sub-nav-link">
+                                                Dairy-Free Cheese
+                                            </a>
+                                        </li>
+                                </ul>
+                            </li>
+                </ul>
+            </nav>
+            <div class="flex md:ml-auto items-center">
+              <div id="sign-in-button" class="flex z-0 md:mr-1"></div>
+              <div id="cart-button" class="cart-button hidden md:block"></div>
+            </div>
+        </div>
+    </div>
+</header>
+            
+
+<nav class="flyout text-18 z-3 bg-redDark lg:hidden" aria-labelledby="flyout-nav-headline" aria-hidden="true" data-cy="flyout">
+  <p id="flyout-nav-headline" class="sr-only">Navigation</p>
+  <div class="flyout__container flex flex-col">
+
+    <div class="nav-track bg-grayLight2 pt-4 pb-1.75 md:pt-1 font-bold uppercase" data-cy="flyout-primary-nav">
+        <ul class="flyout__list -padded">
+                  <li>
+                        <a href=https://www.papamurphys.com/menu/ class="flex items-center" data-cy="primary-nav-link">
+                          <span class="link-text">MENU</span>
+                        </a>
+                  </li>
+                  <li>
+                        <a href=https://www.papamurphys.com/myslice-rewards/ class="flex items-center" data-cy="primary-nav-link">
+                          <span class="link-text">REWARDS</span>
+                        </a>
+                  </li>
+                  <li>
+                        <a href=https://www.papamurphys.com/take-n-bake/ class="flex items-center" data-cy="primary-nav-link">
+                          <span class="link-text">TAKE &#x27;N&#x27; BAKE</span>
+                        </a>
+                  </li>
+                  <li class="sub-nav__mobile_4 sub-nav__container relative items-center">
+
+                      <button aria-expanded="false" aria-label="MORE Sub Navigation" aria-controls="sub-nav__4" class="text-modernslate h-2 w-2 pl-0.5 hidden"></button>
+                      <ul id="sub-nav__mobile_4" class="sub-nav__menu --mobile block always-expanded  flex-col">
+                              <li class="sub-nav__item">
+                                  <a class="sub-nav__link body-1 -bold rounded-5 my-0.5" href=https://www.papamurphys.com/delivery/ data-cy="primary-sub-nav-link">
+                                      Delivery
+                                  </a>
+                              </li>
+                              <li class="sub-nav__item">
+                                  <a class="sub-nav__link body-1 -bold rounded-5 my-0.5" href=https://www.papamurphys.com/instructions/ data-cy="primary-sub-nav-link">
+                                      Baking Instructions
+                                  </a>
+                              </li>
+                              <li class="sub-nav__item">
+                                  <a class="sub-nav__link body-1 -bold rounded-5 my-0.5" href=https://www.papamurphys.com/hub-of-hacks/ data-cy="primary-sub-nav-link">
+                                      Hub of Hacks
+                                  </a>
+                              </li>
+                              <li class="sub-nav__item">
+                                  <a class="sub-nav__link body-1 -bold rounded-5 my-0.5" href=https://www.papamurphys.com/calzones-product-feature/ data-cy="primary-sub-nav-link">
+                                      NEW Calzones
+                                  </a>
+                              </li>
+                              <li class="sub-nav__item">
+                                  <a class="sub-nav__link body-1 -bold rounded-5 my-0.5" href=https://www.papamurphys.com/meatballs-product-feature/ data-cy="primary-sub-nav-link">
+                                      Meatballs &amp; Marinara
+                                  </a>
+                              </li>
+                              <li class="sub-nav__item">
+                                  <a class="sub-nav__link body-1 -bold rounded-5 my-0.5" href=https://www.papamurphys.com/mediyum-value/ data-cy="primary-sub-nav-link">
+                                      $6.99 mediYUM
+                                  </a>
+                              </li>
+                              <li class="sub-nav__item">
+                                  <a class="sub-nav__link body-1 -bold rounded-5 my-0.5" href=https://www.papamurphys.com/dairy-free-cheese-product-feature/ data-cy="primary-sub-nav-link">
+                                      Dairy-Free Cheese
+                                  </a>
+                              </li>
+                      </ul>
+                  </li>
+        </ul>
+    </div>
+      <div class="nav-track bg-redDark pt-0.75 pb-1.75 font-bold uppercase" data-cy="flyout-secondary-nav">
+        <ul class="flyout__list -padded">
+            <li>
+              <a href=https://www.papamurphys.com/faqs/ >
+                FAQ &amp; Help
+              </a>
+            </li>
+            <li>
+              <a href=https://www.papamurphys.com/gift-cards/ >
+                Gift Cards
+              </a>
+            </li>
+            <li>
+              <a href=https://www.papamurphys.com/nutrition/ >
+                Nutrition
+              </a>
+            </li>
+            <li>
+              <a href=https://www.papamurphys.com/about-us/ >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href=https://papamurphyscareers.com/ target=_blank rel=noreferrer>
+                Careers
+                  <span class="sr-only">(Opens in new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href=https://papamurphysfranchise.com/ target=_blank rel=noreferrer>
+                Franchise
+                  <span class="sr-only">(Opens in new tab)</span>
+              </a>
+            </li>
+        </ul>
+      </div>
+  </div>
+</nav>
+            
+
+<!-- Need to convert to new model after the FE/BE header navigation integration is done -->
+
+<main>
+    <div class="col-12">
+        
+<div><div>
+
+
+<div class="hero -condensed relative bg-red">
+    <div class="hero__container" style="background: rgba(0, 0, 0, 0%);">
+        <div class="hero__content px-1.25 pt-6 pb-3 md:pt-9 lg:px-7 lg:pb-5" data-cy="ordering-hero">
+            <h1 class="heading-standred text-40 leading-40 lg:text-60 lg:leading-60 text-white swash" data-cy="ordering-hero-title">XLNY PIZZA BAKING INSTRUCTIONS</h1>
+        </div>
+    </div>
+</div></div></div>
+    </div>
+
+    
+
+<nav class="breadcrumbs container my-1" aria-label="Breadcrumb" data-cy="breadcrumb">
+    <ul class="flex items-center mx-2">
+                <li class="crumb flex items-center">
+                    <a class="body-1 -bold text-red text-14" href="/">Home</a>
+                </li>
+                <li class="crumb flex items-center">
+                    <a class="body-1 -bold text-red text-14" href="/instructions/">Baking Instructions</a>
+                </li>
+            <li class="body-1 -bold text-14">
+                <a aria-current="page">XLNY Pizza Baking Instructions</a>
+            </li>
+    </ul>
+</nav>
+
+
+    <div class="col-12">
+        <div class="cooking-instructions-container mt-2.5">
+            
+<div><div>
+
+<div class="rich-text-block container mx-auto" data-cy="rich-text-block">
+    <h5><span class="TextRun SCXW51265523 BCX0" lang="EN-US" xml:lang="EN-US" data-contrast="auto"><span class="NormalTextRun SCXW51265523 BCX0">New York Style Pizza from Your Oven</span></span></h5>
+<p>&nbsp;</p>
+<p><span class="TextRun SCXW51265523 BCX0" lang="EN-US" xml:lang="EN-US" data-contrast="auto"><span class="NormalTextRun SCXW51265523 BCX0">Bake within 60 minutes of purchase or refrigerate. If refrigerated, remove 60 minutes prior to baking for crust to rise. Always bake pizzas within 24 hours of purchase.</span></span></p>
+<p>&nbsp;</p>
+<p><img src="/link/b42d1ed6c91f493bae2eae0bc97476b1.aspx" alt="XLNY-Detail.jpg" width="800" height="449" /></p>
+    
+
+</div>
+</div><div>
+<div class="recipe-step-container mx-auto my-2">
+    
+<div><div>
+
+
+<div class="recipe-step bg-grayLight mx-0.75 my-0.5 px-1.5 lg:px-2 pt-1 pb-1.25" data-cy="recipe-step">
+    <h6 class="mb-0.75 text-18 lg:text-20" data-cy="recipe-step-headline">Step 1 - Get ready</h6>
+    
+<p><span style="font-family: Verdana; white-space: pre-wrap;">Preheat oven to 425&deg;F. Remove plastic wrap and leave XLNY pizza on tray.</span></p>
+</div></div><div>
+
+
+<div class="recipe-step bg-grayLight mx-0.75 my-0.5 px-1.5 lg:px-2 pt-1 pb-1.25" data-cy="recipe-step">
+    <h6 class="mb-0.75 text-18 lg:text-20" data-cy="recipe-step-headline">Step 2 - Let your oven do the work</h6>
+    
+<div class="ewa-rteLine" style="font-family: Verdana; white-space: pre-wrap;">
+<p class="MsoNormal">Bake XLNY pizza on center oven rack for approximately 12 to 18 minutes (varies by oven). Remove pizza from oven when the crust is golden brown.</p>
+<p class="MsoNormal">Notice any bubbles appearing? Pop them with a fork.</p>
+</div>
+</div></div><div>
+
+
+<div class="recipe-step bg-grayLight mx-0.75 my-0.5 px-1.5 lg:px-2 pt-1 pb-1.25" data-cy="recipe-step">
+    <h6 class="mb-0.75 text-18 lg:text-20" data-cy="recipe-step-headline">Step 3 - Slice it up!</h6>
+    
+<p><span style="font-family: Verdana; white-space: pre-wrap;">Let pizza sit for 5 minutes before cutting. Enjoy the foldable New York Style crust!</span></p>
+</div></div></div>
+</div></div><div>
+
+
+<section class="mx-auto py-1.25 mb-1.25 lg:py-1.75" data-cy="small-tiles-container">
+        <h3 class="text-center px-1.25 mb-1.25 lg:mb-2.5 swash" data-cy="small-tiles-container-headline">Pizza Tips &amp; Tricks</h3>
+    <div class="flex justify-center">
+        <div class="tiles__track flex mx-auto px-1.25 flex-col lg:flex-row flex-wrap justify-center gap-3 md:gap-2.5 lg:gap-2 pb-1" data-cy="small-tiles">
+            
+<div>
+
+
+<div class="small-tile__block flex flex-col gap-1.25 mx-auto lg:mx-0" data-cy="small-tile-block">
+  <div class="mx-0.5 flex flex-col items-center text-center order-2" data-cy="small-tile-text-container">
+        <h3 class="h6 heading-standred swash" data-cy="small-tile-headline">CRISPIER CRUST</h3>
+      <p class="body-1 mt-0.25" data-cy="small-tile-subheadline">After 10 to 12 minutes, slide pizza off tray directly onto oven rack. Ready when golden brown. Excludes Pan Pizza! </p>
+  </div>
+</div></div><div>
+
+
+<div class="small-tile__block flex flex-col gap-1.25 mx-auto lg:mx-0" data-cy="small-tile-block">
+  <div class="mx-0.5 flex flex-col items-center text-center order-2" data-cy="small-tile-text-container">
+        <h3 class="h6 heading-standred swash" data-cy="small-tile-headline">POP BUBBLES</h3>
+      <p class="body-1 mt-0.25" data-cy="small-tile-subheadline">If bubbles form while baking, carefully pop with a fork. Bubbles tend to make toppings slide.</p>
+  </div>
+</div></div><div>
+
+
+<div class="small-tile__block flex flex-col gap-1.25 mx-auto lg:mx-0" data-cy="small-tile-block">
+  <div class="mx-0.5 flex flex-col items-center text-center order-2" data-cy="small-tile-text-container">
+        <h3 class="h6 heading-standred swash" data-cy="small-tile-headline">RACK IT</h3>
+      <p class="body-1 mt-0.25" data-cy="small-tile-subheadline">Center rack = Original, Pan, Stuffed or Gluten Free. Lower Rack = Thin or XLNY (at least 5 inches from bottom).</p>
+  </div>
+</div></div><div>
+
+
+<div class="small-tile__block flex flex-col gap-1.25 mx-auto lg:mx-0" data-cy="small-tile-block">
+  <div class="mx-0.5 flex flex-col items-center text-center order-2" data-cy="small-tile-text-container">
+        <h3 class="h6 heading-standred swash" data-cy="small-tile-headline">ROTATE</h3>
+      <p class="body-1 mt-0.25" data-cy="small-tile-subheadline">Does your oven heat unevenly? Rotating your pizza 180 degrees every 5 to 7 minutes will take care of that.</p>
+  </div>
+</div></div><div>
+
+
+<div class="small-tile__block flex flex-col gap-1.25 mx-auto lg:mx-0" data-cy="small-tile-block">
+  <div class="mx-0.5 flex flex-col items-center text-center order-2" data-cy="small-tile-text-container">
+        <h3 class="h6 heading-standred swash" data-cy="small-tile-headline">BAKING 2 PIZZAS</h3>
+      <p class="body-1 mt-0.25" data-cy="small-tile-subheadline">Place one on lower rack left. The other on upper rack right. Rotate half-way through. Crispiness all around!</p>
+  </div>
+</div></div>
+        </div>
+    </div>
+</section>
+</div></div>
+        </div>
+    </div>
+</main>
+
+        </div>
+    </div>
+    
+
+    <!-- SalesForce Embedded Chat Start -->
+    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script type='text/javascript'>
+         var initESW = function (gslbBaseURL) {
+            embedded_svc.settings.displayHelpButton = false; //Or false
+            embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+            embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+            embedded_svc.settings.entryFeature = 'LiveAgent';
+
+            embedded_svc.init(
+                'https://papamurphys.my.salesforce.com',
+                'https://papamurphys.force.com/guestservices',
+                gslbBaseURL,
+                '00D300000006UCI',
+                'Guest_Services_with_Bot_papamurphys_com',
+                {
+                    baseLiveAgentContentURL: 'https://c.la3-c2-ph2.salesforceliveagent.com/content',
+                    deploymentId: '5722T000000PBat',
+                    buttonId: '5732T0000000152',
+                    baseLiveAgentURL: 'https://d.la3-c2-ph2.salesforceliveagent.com/chat',
+                    eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I2T000000Kyo6UAC_17f28bdb473',
+                    isOfflineSupportEnabled: true
+                }
+            );
+        };
+
+        if (!window.embedded_svc) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://papamurphys.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+            s.onload = function () {
+                initESW(null);
+            };
+            document.body.appendChild(s);
+        } else {
+            initESW('https://service.force.com');
+        }
+
+        // this function allows us to use a custom chat button
+        // see https://developer.salesforce.com/docs/atlas.en-us.snapins_web_dev.meta/snapins_web_dev/embedded_services_web_bootstrap_chat.htm
+        function bootstrapChat() {
+            embedded_svc.bootstrapEmbeddedService();
+        }
+    </script>
+    <!-- SalesForce Embedded Chat End -->
+</body>
+
+
+
+<footer class="footer bg-primary text-white pb-8.5 md:pb-2.25">
+  
+
+<div id="cart-button-mobile" class="md:hidden"></div>
+<nav class="fixed md:hidden bottom-0 w-full z-5" data-cy="mobile-footer-nav-bar">
+        <ul class="mobile-nav flex justify-evenly bg-white py-0.5 text-black text-xs uppercase w-full">
+                    <li>
+                        <a href=https://www.papamurphys.com/menu/ class="mobile-nav__links flex flex-col items-center">
+                            <span class="mb-0.25 p-0.5 rounded-full"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 16C3.59 16 0 12.41 0 8C0 3.59 3.59 0 8 0C12.41 0 16 3.59 16 8C16 12.41 12.41 16 8 16ZM8 1C4.14 1 1 4.14 1 8C1 11.86 4.14 15 8 15C11.86 15 15 11.86 15 8C15 4.14 11.86 1 8 1Z" fill="#DA291C" /><path d="M8 14.5C4.415 14.5 1.5 11.585 1.5 8C1.5 4.415 4.415 1.5 8 1.5C11.585 1.5 14.5 4.415 14.5 8C14.5 11.585 11.585 14.5 8 14.5ZM8 2.5C4.965 2.5 2.5 4.965 2.5 8C2.5 11.035 4.965 13.5 8 13.5C11.035 13.5 13.5 11.035 13.5 8C13.5 4.965 11.035 2.5 8 2.5Z" fill="#DA291C" /><path d="M5.19502 6.81498C5.91023 6.81498 6.49002 6.23518 6.49002 5.51998C6.49002 4.80477 5.91023 4.22498 5.19502 4.22498C4.47982 4.22498 3.90002 4.80477 3.90002 5.51998C3.90002 6.23518 4.47982 6.81498 5.19502 6.81498Z" fill="#DA291C" /><path d="M10.045 5.99002C10.7602 5.99002 11.34 5.41023 11.34 4.69502C11.34 3.97982 10.7602 3.40002 10.045 3.40002C9.32979 3.40002 8.75 3.97982 8.75 4.69502C8.75 5.41023 9.32979 5.99002 10.045 5.99002Z" fill="#DA291C" /><path d="M8.71498 12.795C9.43019 12.795 10.01 12.2152 10.01 11.5C10.01 10.7848 9.43019 10.205 8.71498 10.205C7.99977 10.205 7.41998 10.7848 7.41998 11.5C7.41998 12.2152 7.99977 12.795 8.71498 12.795Z" fill="#DA291C" /><path d="M7.54502 8.31C7.54502 8.31 7.07002 8.505 6.94002 8.285C6.84002 8.115 6.63002 7.27 7.48002 6.815C8.33002 6.36 9.00502 7.165 8.97002 7.36C8.93002 7.585 8.68502 7.76 8.68502 7.76C8.68502 7.76 8.93002 8.34 8.43002 8.645C7.93002 8.95 7.54002 8.31 7.54002 8.31H7.54502Z" fill="#DA291C" /><path d="M3.99997 10.1C3.99997 10.1 3.49497 10.005 3.50997 9.74502C3.51997 9.55002 3.80997 8.72502 4.76997 8.82002C5.72997 8.91502 5.84997 9.95503 5.71497 10.095C5.55997 10.26 5.25497 10.27 5.25497 10.27C5.25497 10.27 5.13997 10.89 4.55497 10.865C3.96997 10.84 3.99997 10.095 3.99997 10.095V10.1Z" fill="#DA291C" /><path d="M11.005 8.67001C11.005 8.67001 10.605 8.35001 10.735 8.13001C10.835 7.96001 11.47 7.365 12.285 7.895C13.1 8.425 12.715 9.40001 12.53 9.46501C12.315 9.53501 12.04 9.41 12.04 9.41C12.04 9.41 11.65 9.905 11.145 9.615C10.64 9.325 11.005 8.67501 11.005 8.67501V8.67001Z" fill="#DA291C" /></svg></span>
+                            <span class="link-text">MENU</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=https://www.papamurphys.com/myslice-rewards/ class="mobile-nav__links flex flex-col items-center">
+                            <span class="mb-0.25 p-0.5 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.14 32.47"><defs><style>.cls-1{fill:#da291c;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M17,32.47a2.15,2.15,0,0,1-1.74-1C15.1,31.3,3,13.54.61,9.07c-1.35-2.5-.17-3.8.66-4.35a31.84,31.84,0,0,1,14-4.67c5.55-.4,10.89,1.68,13.59,3h0a3.6,3.6,0,0,1,1.88,5l-.47,1c-.67,1.43-5.48,10.66-8.66,16.77-1.52,2.91-2.67,5.13-2.85,5.48a2.07,2.07,0,0,1-1.68,1.23ZM16.68,1.64c-.42,0-.85,0-1.28.05A30.07,30.07,0,0,0,2.18,6.08c-.68.46-.72,1.1-.12,2.21,2.38,4.4,14.4,22.08,14.52,22.26s.28.31.39.28.23-.13.33-.32c.18-.36,1.34-2.59,2.86-5.51,3.18-6.1,8-15.31,8.63-16.7l.47-1a2,2,0,0,0-1.09-2.79h0A28.36,28.36,0,0,0,16.68,1.64Zm-.6,18.79L15.56,20c-.62-.52-6.12-5.22-6.85-8.43a3.78,3.78,0,0,1,2.45-4.49,4.72,4.72,0,0,1,4.93,1.27A4.69,4.69,0,0,1,21.15,7a4,4,0,0,1,2.47,4.7c-.79,3.2-6.38,7.8-7,8.31Zm-3.47-12a2.81,2.81,0,0,0-.89.15,2.15,2.15,0,0,0-1.41,2.58c.47,2.05,4,5.48,5.79,7.1,1.86-1.59,5.42-4.95,5.92-7h0a2.33,2.33,0,0,0-1.45-2.77c-1-.38-2.53-.17-3.81,1.55L16.1,11l-.66-.88A3.58,3.58,0,0,0,12.61,8.46Z" /></g></g></svg></span>
+                            <span class="link-text">REWARDS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=https://www.papamurphys.com/take-n-bake/ class="mobile-nav__links flex flex-col items-center">
+                            <span class="mb-0.25 p-0.5 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.84 28.54"><defs><style>.cls-1{fill:#da291c;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M25.67,28.54H4.17A4.17,4.17,0,0,1,0,24.37V4.17A4.17,4.17,0,0,1,4.17,0h21.5a4.17,4.17,0,0,1,4.17,4.17v20.2A4.17,4.17,0,0,1,25.67,28.54ZM4.17,1.64A2.54,2.54,0,0,0,1.64,4.17v20.2a2.53,2.53,0,0,0,2.53,2.52h21.5a2.52,2.52,0,0,0,2.52-2.52V4.17a2.53,2.53,0,0,0-2.52-2.53Z" /><path class="cls-1" d="M22.6,23.75H7A1.74,1.74,0,0,1,5.28,22V14.56A1.74,1.74,0,0,1,7,12.83H22.6a1.74,1.74,0,0,1,1.73,1.73V22A1.74,1.74,0,0,1,22.6,23.75ZM7,14.47a.1.1,0,0,0-.1.09V22a.1.1,0,0,0,.1.09H22.6a.09.09,0,0,0,.09-.09V14.56a.09.09,0,0,0-.09-.09Z" /><path class="cls-1" d="M22.84,10.6H6.91A.83.83,0,0,1,6.91,9H22.84a.83.83,0,0,1,0,1.65Z" /><circle class="cls-1" cx="7.67" cy="5.92" r="1.2" /><circle class="cls-1" cx="14.92" cy="5.92" r="1.2" /><circle class="cls-1" cx="22.03" cy="5.92" r="1.2" /></g></g></svg></span>
+                            <span class="link-text">TAKE &#x27;N&#x27; BAKE</span>
+                        </a>
+                    </li>
+            <li>
+                <span class="offset-large flex flex-col items-center uppercase">
+                    <button class="hamburger js-trigger-flyout -small mb-0.25 mr-0" aria-label="Open More Navigation" data-open-label="Open More Navigation" data-close-label="Close More Navigation" data-cy="footer-hamburger"><span></span></button>
+                    <span aria-hidden="true" data-cy="footer-hamburger-label">More</span>
+                </span>
+            </li>
+        </ul>
+</nav>
+
+  <div class="footer__navigation">
+      <nav class="container flex flex-col items-center md:justify-between md:flex-row md:px-1">
+        <div class="flex nav-track">
+          <a href="/" class="block lg:mb-0 lg:mr-3.5" aria-label="Papa Murphy's Home Page" data-cy="footer-logo">
+<svg width="154" height="54" viewBox="0 0 154 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M78.5944 52.555C78.1167 52.555 77.6389 52.555 77.1014 52.555C53.093 52.4953 28.6069 50.7036 4.35971 47.18L1.3736 46.7619L1.49304 7.10638L4.47915 6.68833C28.3083 3.16471 52.2569 1.37305 75.6083 1.37305C76.2056 1.37305 76.743 1.37305 77.3403 1.37305C101.349 1.43277 125.536 3.4036 149.246 7.10638L152.232 7.58416L152.113 47.2397L149.126 47.6578C125.775 50.8828 102.065 52.555 78.5944 52.555Z" fill="#DA291C"/>
+  <path d="M75.5486 2.6875C76.0861 2.6875 76.6833 2.6875 77.2208 2.6875C101.169 2.74722 125.297 4.65833 148.947 8.42083L150.799 8.71944L150.679 46.1056L148.828 46.3444C125.656 49.6292 102.006 51.2417 78.5945 51.2417C78.1167 51.2417 77.6389 51.2417 77.1014 51.2417C53.1528 51.1819 28.7861 49.3903 4.53889 45.9264L2.6875 45.6278L2.80695 8.24167L4.65833 7.94306C28.3083 4.47917 52.1375 2.6875 75.5486 2.6875ZM75.5486 0C52.1375 0 28.1292 1.79167 4.24028 5.31528L2.38889 5.61389L0.119445 5.97222V8.24167L0 45.6278V47.9569L2.26944 48.2556L4.12083 48.4944C28.4875 51.9583 52.9736 53.8097 77.0417 53.8694C77.5194 53.8694 77.9972 53.8694 78.5347 53.8694C102.125 53.8694 125.894 52.1972 149.186 48.9125L151.038 48.6736L153.307 48.375V46.1056L153.426 8.71944V6.45L151.157 6.09167L149.306 5.79306C125.536 2.03056 101.289 0.119444 77.1611 0.0597213C76.6833 -9.12179e-07 76.1458 0 75.5486 0Z" fill="white"/>
+  <path d="M49.3903 15.9455H45.9861C45.8069 15.9455 45.5681 16.1246 45.5681 16.3038L42.2236 33.8024C42.2236 33.9219 42.2236 33.9816 42.2833 34.101C42.3431 34.1607 42.4625 34.2205 42.5819 34.2205H44.9111C45.15 34.2205 45.3292 34.0413 45.3292 33.8621L45.7472 31.4135C45.7472 31.2941 45.8069 31.2344 45.9264 31.1746C47.3 30.2191 48.9125 29.9802 48.9125 29.9802C48.9722 29.9802 49.0917 30.0399 49.0917 30.0996L49.6889 33.8621C49.7486 34.0413 49.9278 34.2205 50.1069 34.2205H52.675C52.7944 34.2205 52.9139 34.1607 52.9736 34.101C53.0333 34.0413 53.0333 33.9219 53.0333 33.8024L49.868 16.3038C49.8083 16.1246 49.6292 15.9455 49.3903 15.9455ZM46.3444 28.0094L47.5389 20.6038C47.5389 20.4844 47.6583 20.4844 47.718 20.6038L48.7333 26.9941C48.7333 27.1135 48.7333 27.1732 48.6139 27.1732C48.6139 27.1732 47.5986 27.3524 46.5236 28.1288C46.3444 28.1288 46.2847 28.0691 46.3444 28.0094ZM42.9403 20.5441C42.9403 17.558 41.268 16.0052 38.1625 16.0052H33.8028C33.5639 16.0052 33.3847 16.1844 33.3847 16.3635V30.9357C33.3847 32.4288 33.4444 32.9066 33.6236 33.2649C33.8625 33.7427 34.3403 34.1607 35.7139 34.1607H36.4305C36.6694 34.1607 36.8486 33.9816 36.8486 33.8024V28.4871C36.8486 28.4274 36.9083 28.308 37.0278 28.308L38.2222 28.1288C41.268 27.5913 43 25.501 43 22.3357V20.5441H42.9403ZM36.6694 18.9913C36.6694 18.8719 36.7292 18.8121 36.7889 18.8121H38.1028C38.9389 18.8121 39.5361 19.051 39.5361 20.3649V22.5149C39.5361 24.2469 39.0583 25.1427 38.1028 25.3219L36.7889 25.501C36.7292 25.501 36.6694 25.4413 36.6694 25.3816V18.9913ZM22.2764 20.5441C22.2764 17.558 20.6042 16.0052 17.4986 16.0052H13.1389C12.9 16.0052 12.7208 16.1844 12.7208 16.3635V30.9357C12.7208 32.4288 12.7805 32.9066 12.9597 33.2649C13.1986 33.7427 13.6764 34.1607 15.05 34.1607H15.7667C16.0055 34.1607 16.1847 33.9816 16.1847 33.8024V28.4871C16.1847 28.3677 16.2444 28.308 16.3639 28.308L17.5583 28.1288C20.6042 27.5913 22.3361 25.501 22.3361 22.3357V20.5441H22.2764ZM16.0653 18.9316C16.0653 18.8719 16.125 18.8121 16.1847 18.8121H17.4986C18.3347 18.8121 18.9319 19.051 18.9319 20.3649V22.5149C18.9319 24.2469 18.4542 25.1427 17.4986 25.3219L16.1847 25.501C16.125 25.501 16.0653 25.4413 16.0653 25.3816V18.9316ZM34.4597 35.6538C33.8028 35.5941 33.2055 35.2357 32.9069 34.6982C32.7875 34.4594 32.5486 33.683 32.25 32.3094L29.2042 16.3038C29.1444 16.1246 28.9653 15.9455 28.7861 15.9455H25.3819C25.2028 15.9455 24.9639 16.1246 24.9639 16.3038L21.6194 33.8024C21.6194 33.9219 21.6194 33.9816 21.6792 34.101C21.7389 34.1607 21.8583 34.2205 21.9778 34.2205H24.3069C24.5458 34.2205 24.725 34.0413 24.725 33.8621L25.143 31.4135C25.143 31.2941 25.2028 31.2344 25.3222 31.1746C26.7555 30.2191 28.3083 29.9802 28.3083 29.9802C28.368 29.9802 28.4875 30.0399 28.4875 30.0996C28.4875 30.0996 29.2042 34.5191 29.2639 34.6385C29.3833 35.2955 29.7417 35.7135 30.0403 36.0121C30.5778 36.4899 31.4139 36.7885 32.3097 36.7885C32.9069 36.7885 33.4444 36.6691 33.9222 36.4302C34.2208 36.251 34.4597 36.0719 34.5792 35.7732L34.6986 35.5941L34.4597 35.6538ZM27.8305 27.1732C27.8305 27.1732 26.7555 27.4121 25.7403 28.1288C25.6805 28.1288 25.6208 28.0691 25.6805 28.0094L26.875 20.6038C26.875 20.4844 26.9944 20.4844 27.0542 20.6038L28.0694 26.9941C28.0097 27.0538 27.95 27.1732 27.8305 27.1732ZM130.075 17.3788C129.776 17.4982 129.537 17.4385 129.776 17.0802C130.493 15.9455 129.836 15.826 129.537 15.2288C129.179 14.5121 129.597 13.4371 130.553 13.1982C131.449 12.9594 132.106 13.5566 132.285 14.2135C132.583 15.408 131.329 16.9607 130.075 17.3788ZM116.996 16.8413C117.235 17.2594 117.235 17.6774 117.235 19.7677C117.235 20.3649 117.235 33.7427 117.235 33.7427C117.235 33.9816 117.056 34.101 116.817 34.101H114.249C114.01 34.101 113.831 33.9219 113.831 33.7427V26.4566C113.831 26.3969 113.771 26.3371 113.711 26.3371C113.711 26.3371 112.099 26.5163 110.844 27.4719C110.785 27.5316 110.665 27.5913 110.665 27.651V33.7427C110.665 33.9816 110.486 34.101 110.247 34.101H107.679C107.44 34.101 107.261 33.9219 107.261 33.7427V16.3038C107.261 16.0649 107.44 15.9455 107.679 15.9455H110.247C110.486 15.9455 110.665 16.1246 110.665 16.3038V24.1871C110.665 24.2469 110.725 24.3066 110.785 24.3066C112.218 23.2913 113.651 23.0524 113.651 23.0524C113.771 23.0524 113.831 22.933 113.831 22.8135V16.3038C113.831 16.0649 114.01 15.9455 114.249 15.9455H114.906C116.279 15.9455 116.697 16.4232 116.996 16.8413ZM128.881 16.0649C128.94 16.1246 128.94 16.2441 128.881 16.3635L125.178 26.3969V30.876V33.7427C125.178 33.9816 124.999 34.101 124.76 34.101H122.192C121.953 34.101 121.774 33.9219 121.774 33.7427V26.3371L120.46 22.8135C120.34 22.5746 118.19 16.483 117.832 16.0052C117.533 15.5274 116.876 14.9899 116.04 14.9302C116.578 13.8552 118.25 13.5566 119.683 13.9746C121.117 14.3927 121.296 15.408 121.774 16.6024C122.072 17.3191 123.207 20.9621 123.625 22.3357L125.596 16.3038C125.656 16.1246 125.894 15.9455 126.074 15.9455H128.582C128.701 15.9455 128.821 16.0052 128.881 16.0649ZM101.229 16.0052H96.8694C96.6305 16.0052 96.4514 16.1844 96.4514 16.3635V30.9955C96.4514 32.4885 96.5111 32.9663 96.6903 33.3246C96.9292 33.8024 97.4069 34.2205 98.7805 34.2205H99.4972C99.7361 34.2205 99.9153 34.0413 99.9153 33.8621V28.5469C99.9153 28.4274 99.975 28.3677 100.094 28.3677L101.289 28.1885C104.335 27.651 106.067 25.5607 106.067 22.3955V20.6038C106.067 17.558 104.394 16.0052 101.229 16.0052ZM99.7958 18.9316C99.7958 18.8719 99.8556 18.8121 99.9153 18.8121H101.229C102.065 18.8121 102.662 19.051 102.662 20.3649V22.5149C102.662 24.2469 102.185 25.1427 101.229 25.3219L99.9153 25.501C99.8556 25.501 99.7958 25.4413 99.7958 25.3816V18.9316ZM140.765 29.383C140.825 32.608 138.794 34.3996 135.689 34.3996C132.643 34.3996 130.911 32.5482 130.911 29.7413V28.9649C130.911 28.726 131.09 28.6066 131.329 28.6066H133.718C133.957 28.6066 134.136 28.7857 134.136 28.9649V29.6816C134.136 30.9955 134.853 31.7121 135.868 31.7121C136.883 31.7121 137.54 30.8163 137.54 29.6816C137.481 28.3677 136.644 27.5316 134.733 25.9788C132.106 23.8885 131.15 22.276 131.15 20.126C131.15 17.6177 132.882 15.7066 135.988 15.7066C138.854 15.7066 140.526 17.2594 140.586 19.1705C140.706 21.7982 138.317 22.0969 137.062 21.6191C137.301 21.4996 137.54 20.9621 137.54 20.2455C137.54 19.3496 136.943 18.5135 135.928 18.5135C134.913 18.5135 134.435 19.1705 134.435 20.126C134.435 21.3802 135.271 22.2163 137.301 23.8885C139.631 25.7996 140.706 27.2927 140.765 29.383ZM83.7306 16.3635V29.7413C83.7306 32.7274 81.9986 34.3996 78.7736 34.3996C75.5486 34.3996 73.8167 32.7274 73.8167 29.7413V16.3635C73.8167 16.1246 73.9958 16.0052 74.2347 16.0052H76.8625C77.1014 16.0052 77.2805 16.1844 77.2805 16.3635V29.9802C77.2805 31.0552 77.8181 31.5927 78.8333 31.5927C79.7292 31.5927 80.3861 31.2941 80.3861 29.9802V16.3635C80.3861 16.1246 80.5653 16.0052 80.8042 16.0052H83.3722C83.5514 16.0052 83.7306 16.1844 83.7306 16.3635ZM95.9139 34.2802C95.6153 33.8024 93.3458 27.5913 93.1667 26.9941C94.4208 26.2177 95.0778 24.8441 95.0778 22.933V20.5441C95.0778 17.558 93.4056 16.0052 90.2403 16.0052H85.8806C85.6417 16.0052 85.4625 16.1844 85.4625 16.3635V29.6816V33.8024C85.4625 34.0413 85.6417 34.1607 85.8806 34.1607H88.4486C88.6875 34.1607 88.8667 33.9816 88.8667 33.8024V27.7705C88.8667 27.7107 88.9264 27.651 88.9861 27.651H89.8222C89.9417 27.651 89.9417 27.7705 90.0014 27.8302C90.0014 27.8302 92.0319 33.8621 92.0319 33.9816C92.2111 34.4594 92.45 34.8774 92.7486 35.2955C93.2264 36.0121 94.1222 36.3705 95.1972 36.3705C95.7944 36.3705 97.168 36.1913 97.5861 35.2357C96.8694 35.176 96.2125 34.758 95.9139 34.2802ZM88.8667 18.9316C88.8667 18.8719 88.9264 18.8121 88.9861 18.8121H90.3C91.1361 18.8121 91.7333 19.051 91.7333 20.3649V23.2913C91.7333 24.6052 91.1958 24.8441 90.3 24.8441H88.9861C88.9264 24.8441 88.8667 24.7844 88.8667 24.7246V18.9316ZM60.9764 22.4552V33.8621C60.9764 34.0413 60.7972 34.2205 60.5583 34.2205H58.2292C57.9903 34.2205 57.8111 34.0413 57.8111 33.8621V16.3635C57.8111 16.1844 57.9903 16.0052 58.2292 16.0052H62.1708C62.4097 16.0052 62.5889 16.1844 62.6486 16.3635L64.9778 27.5316L67.3069 16.3635C67.3667 16.1844 67.5458 16.0052 67.7847 16.0052H71.4278C71.7264 16.0052 71.9653 16.1246 71.9653 16.483V33.8621C71.9653 34.0413 71.8458 34.2205 71.4875 34.2205H69.1583C68.9194 34.2205 68.7403 34.0413 68.7403 33.8621V22.4552L66.2319 33.8621C66.1722 34.0413 65.9931 34.2205 65.7542 34.2205H63.7833C63.5444 34.2205 63.3653 34.0413 63.3055 33.8621L60.9764 22.4552Z" fill="white"/>
+  <path d="M41.5667 38.342V39.4767H39.8347V43.1197H38.5209V39.4767H36.7292V38.342H41.5667ZM44.9709 42.2836H42.7611L42.4028 43.06H41.0889L43.1792 38.2822H44.6722L46.7625 43.06H45.3292L44.9709 42.2836ZM43.1195 41.3878H44.6125L43.8959 39.6558L43.1195 41.3878ZM49.2111 41.2683L48.5542 41.985V43.06H47.2403V38.2822H48.5542V40.4919L50.4056 38.2822H52.0181L50.107 40.3128C50.7042 41.1489 52.0181 43.06 52.0181 43.06H50.4653L49.2111 41.2683ZM56.8556 38.342V39.3572H53.9292V40.1933H56.1389V41.1489H53.9292V42.0447H56.8556V43.06H52.6153V38.2822H56.8556V38.342ZM59.1847 40.7906V39.9544C59.1847 38.9989 59.6625 38.5211 60.5583 38.342V38.7003C60.0208 38.9989 59.9014 39.1781 59.9014 39.6558H60.4389V40.7906H59.1847ZM62.6486 38.342L64.9778 41.2086V38.342H66.232V43.1197H64.9181L62.5889 40.1933V43.1197H61.3347V38.342H62.6486ZM68.2028 38.342V39.1781C68.2028 40.1336 67.725 40.6114 66.8292 40.7906V40.4322C67.307 40.1336 67.4861 39.9544 67.4861 39.4767H66.9486V38.342H68.2028ZM73.2195 38.342C74.3542 38.342 74.9514 38.8794 74.9514 39.5961C74.9514 40.2531 74.5931 40.5517 73.9958 40.6711C74.6528 40.8503 75.0111 41.2086 75.0111 41.8058C75.0111 42.5822 74.3542 43.06 73.2792 43.06H70.4125V38.2822H73.2195V38.342ZM71.7861 40.3128H73.0403C73.4584 40.3128 73.6972 40.1336 73.6972 39.835C73.6972 39.5364 73.4584 39.3572 73.1 39.3572H71.7861V40.3128ZM71.7861 42.1045H73.1C73.5181 42.1045 73.757 41.9253 73.757 41.6267C73.757 41.3281 73.5181 41.1489 73.0403 41.1489H71.7861V42.1045ZM79.132 42.2836H76.9222L76.5639 43.06H75.25L77.3403 38.2822H78.8334L80.9236 43.06H79.4903L79.132 42.2836ZM77.2806 41.3878H78.7736L78.057 39.6558L77.2806 41.3878ZM83.3125 41.2683L82.6556 41.985V43.06H81.3417V38.2822H82.6556V40.4919L84.507 38.2822H86.1195L84.2084 40.3128C84.8056 41.1489 86.1195 43.06 86.1195 43.06H84.507L83.3125 41.2683ZM91.0167 38.342V39.3572H88.0903V40.1933H90.3V41.1489H88.0903V42.0447H91.0167V43.06H86.7764V38.2822H91.0167V38.342ZM96.3917 38.342C97.6458 38.342 98.3625 38.9392 98.3625 39.9544C98.3625 41.0294 97.5861 41.6267 96.332 41.6267H95.257V43.1197H93.9431V38.342H96.3917ZM95.257 40.6711H96.2125C96.8695 40.6711 97.0486 40.4322 97.0486 40.0142C97.0486 39.5961 96.8097 39.3572 96.2125 39.3572H95.257V40.6711ZM100.333 38.342V43.1197H99.0195V38.342H100.333ZM105.708 38.342V39.0586L103.021 41.985H105.649V43.1197H101.05V42.4031L103.738 39.417H101.169V38.342H105.708ZM110.785 38.342V39.0586L108.097 41.985H110.725V43.1197H106.126V42.4031L108.814 39.417H106.246V38.342H110.785ZM114.906 42.2836H112.696L112.338 43.06H111.024L113.114 38.2822H114.607L116.697 43.06H115.264L114.906 42.2836ZM113.054 41.3878H114.547L113.831 39.6558L113.054 41.3878Z" fill="white"/>
+  <path d="M142.497 31.533V32.8469H142.139V31.533H141.661V31.2344H142.975V31.533H142.497ZM143.99 32.4288L143.513 31.8316V32.8469H143.154V31.2344H143.393L143.99 32.0108L144.588 31.2344H144.826V32.8469H144.468V31.8316L143.99 32.4288Z" fill="white"/>
+</svg>          </a>
+            <ul class="hidden items-center space-x-1.25 xl:space-x-1.75 lg:flex" aria-label="Primary Footer Links" data-cy="primary-footer-links">
+                <li><a href=https://www.papamurphys.com/faqs/ >FAQ &amp; Help</a></li>
+                <li><a href=https://www.papamurphys.com/gift-cards/ >Gift Cards</a></li>
+                <li><a href=https://www.papamurphys.com/nutrition/ >Nutrition</a></li>
+                <li><a href=https://www.papamurphys.com/about-us/ >About Us</a></li>
+                <li><a href=https://papamurphyscareers.com/ target=_blank rel=noreferrer>Careers</a></li>
+                <li><a href=https://papamurphysfranchise.com/ target=_blank rel=noreferrer>Franchise</a></li>
+            </ul>
+        </div>
+        <div class="flex mt-1.75 md:mt-0">
+          <button class="button -primary-white flex items-center" onclick="bootstrapChat()" data-cy="footer-live-chat-button">
+<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 9.92417V20.5H10.015C8.06419 20.4991 6.15622 19.9276 4.52612 18.8558C2.89603 17.7841 1.61502 16.259 0.840861 14.4683C0.0667064 12.6776 -0.166776 10.6996 0.169172 8.77794C0.50512 6.85624 1.39583 5.07477 2.73158 3.65295C4.06733 2.23114 5.7898 1.23108 7.68681 0.775949C9.58383 0.320821 11.5725 0.430504 13.408 1.09149C15.2435 1.75247 16.8455 2.93589 18.0168 4.49598C19.1881 6.05606 19.8775 7.92468 20 9.87167V9.92417ZM10.8334 6.33334H5.83336V8H10.8334V6.33334ZM14.1667 9.66667H5.83336V11.3333H14.1667V9.66667ZM14.1667 13H5.83336V14.6667H14.1667V13Z" fill="currentColor"/>
+</svg>            <span class="ml-1">Chat</span>
+          </button>
+        </div>
+      </nav>
+  </div>
+
+  <nav class="container flex flex-col items-center pt-2.5 md:pt-1.75 md:px-1 lg:items-start"
+    aria-label="Secondary Footer Links" data-cy="secondary-footer-links" data-footer-analytics>
+    <div class="flex justify-between items-center w-full flex-col-reverse md:flex-row md:items-start text-14 md:text-16">
+        <ul class="footer__links grid gap-x-5 place-content-start lg:gap-x-6.5">
+            <li><a href=https://locations.papamurphys.com target=_blank rel=noreferrer>Location Directory</a></li>
+            <li><a href=https://papamurphysfranchise.com/ >Franchise</a></li>
+            <li><a href=https://www.papamurphys.com/fundraising/ >Fundraising</a></li>
+            <li><a href=https://www.papamurphys.com/privacy-policy/ >Privacy Policy</a></li>
+            <li><a href=http://www.papamurphys.ca/ target=_blank rel=noreferrer>Canada</a></li>
+            <li><a href=https://www.papamurphys.com/terms-and-conditions/ >Terms of Use</a></li>
+            <li><a href=http://www.papamurphysme.com/ target=_blank rel=noreferrer>United Arab Emirates</a></li>
+          <!-- OneTrust Cookies Settings button -->
+          <li><button id="footer-onetrust-btn" class="ot-sdk-show-settings link flex max-w-max">Do Not Sell My Info</button></li>
+        </ul>
+      <div class="mt-1.25 mb-2 block md:hidden lg:block md:mr-7 md:my-0" data-cy="app-links">
+        <p class="h2 text-20 text-white font-bold normal-case mb-0.75">Get Our Mobile App</p>
+        <a class="-external inline-flex items-center mb-0.75" href="https://apps.apple.com/us/app/papa-murphys-take-bake-pizza/id1406873399" target="_blank" rel="noreferrer">
+<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.22 1.08C14.1592 2.21506 13.7311 3.29959 13 4.17C12.2722 5.04453 11.239 5.60941 10.11 5.75C10.0394 5.75712 9.96812 5.74913 9.90085 5.72657C9.83359 5.70401 9.7719 5.6674 9.71987 5.61916C9.66785 5.57092 9.62669 5.51216 9.59913 5.44679C9.57156 5.38141 9.55822 5.31092 9.56 5.24C9.63618 4.12993 10.0754 3.07574 10.81 2.24C11.5495 1.40381 12.532 0.819881 13.62 0.57C13.6943 0.554762 13.7712 0.556643 13.8447 0.575501C13.9182 0.594359 13.9864 0.6297 14.0442 0.678845C14.1021 0.72799 14.1479 0.78965 14.1784 0.859153C14.2088 0.928657 14.2231 1.00418 14.22 1.08ZM16.0911 11.125C15.7542 11.7969 15.5792 12.5384 15.58 13.29C15.5784 14.1619 15.8163 15.0175 16.2677 15.7635C16.7191 16.5094 17.3668 17.117 18.14 17.52C18.245 17.5774 18.3259 17.6705 18.3681 17.7824C18.4103 17.8943 18.411 18.0176 18.37 18.13C18.0247 19.0729 17.5645 19.9696 17 20.8C16.08 22.12 15.07 23.44 13.61 23.47C12.896 23.4847 12.4188 23.2793 11.9222 23.0656C11.4033 22.8424 10.8633 22.61 10.01 22.61C9.12661 22.61 8.58179 22.8451 8.0514 23.0739C7.57912 23.2776 7.11827 23.4765 6.44 23.5C5 23.55 3.91 22.06 3 20.74C1.18 18 -0.250002 13.1 1.67 9.76001C2.11747 8.94805 2.76864 8.26657 3.55942 7.78263C4.3502 7.2987 5.25334 7.02898 6.18 7.00001C6.96486 7.00001 7.74971 7.3143 8.43943 7.59049C8.98 7.80695 9.46212 8.00001 9.84 8.00001C10.1757 8.00001 10.6257 7.82324 11.1502 7.61723C11.9692 7.2955 12.9697 6.90247 14 7.00001C14.681 7.03215 15.3489 7.19894 15.9651 7.49073C16.5813 7.78252 17.1336 8.19353 17.59 8.70001C17.6342 8.75122 17.6675 8.81085 17.688 8.8753C17.7084 8.93975 17.7156 9.00769 17.7091 9.07499C17.7025 9.1423 17.6824 9.20758 17.6499 9.26688C17.6174 9.32618 17.5732 9.37828 17.52 9.42001C16.9173 9.86914 16.4279 10.453 16.0911 11.125Z" fill="currentColor"/>
+</svg>
+          <span class="link-text ml-0.75" data-cy="store-text">App Store</span>
+          <span class="sr-only">(Opens in a new tab)</span>
+        </a>
+        <br>
+        <a class="-external inline-flex items-center" href="https://play.google.com/store/apps/details?id=com.olo.papamurphys&hl=en_US&gl=US" target="_blank" rel="noreferrer">
+<svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 18C4 18.55 4.45 19 5 19H6V22.5C6 23.33 6.67 24 7.5 24C8.33 24 9 23.33 9 22.5V19H11V22.5C11 23.33 11.67 24 12.5 24C13.33 24 14 23.33 14 22.5V19H15C15.55 19 16 18.55 16 18V8H4V18ZM1.5 8C0.67 8 0 8.67 0 9.5V16.5C0 17.33 0.67 18 1.5 18C2.33 18 3 17.33 3 16.5V9.5C3 8.67 2.33 8 1.5 8ZM18.5 8C17.67 8 17 8.67 17 9.5V16.5C17 17.33 17.67 18 18.5 18C19.33 18 20 17.33 20 16.5V9.5C20 8.67 19.33 8 18.5 8ZM13.53 2.16L14.83 0.86C15.03 0.66 15.03 0.35 14.83 0.15C14.63 -0.05 14.32 -0.05 14.12 0.15L12.64 1.63C11.85 1.23 10.95 1 10 1C9.04 1 8.14 1.23 7.34 1.63L5.85 0.15C5.65 -0.05 5.34 -0.05 5.14 0.15C4.94 0.35 4.94 0.66 5.14 0.86L6.45 2.17C4.97 3.26 4 5.01 4 7H16C16 5.01 15.03 3.25 13.53 2.16ZM8 5H7V4H8V5ZM13 5H12V4H13V5Z" fill="currentColor"/>
+</svg>
+          <span class="link-text ml-0.75" data-cy="store-text">Google Play Store</span>
+          <span class="sr-only">(Opens in a new tab)</span>
+        </a>
+      </div>
+        <div>
+            
+
+
+<ul class="flex space-x-1" aria-label="Social Media Links" data-cy="social-media-links">
+    <li>
+      
+
+<a href="https://www.facebook.com/papamurphyspizza/" rel="noreferrer" target="_blank" class='heading-standred block' aria-label="Facebook_white.svg">
+    <img src="/globalassets/icons/facebook_white.svg" alt="Facebook_white.svg" height="auto" width="auto" class="mx-auto" />
+</a>
+    </li>
+    <li>
+      
+
+<a href="https://twitter.com/papamurphys" rel="noreferrer" target="_blank" class='heading-standred block' aria-label="Twitter_white.svg">
+    <img src="/globalassets/icons/twitter_white.svg" alt="Twitter_white.svg" height="auto" width="auto" class="mx-auto" />
+</a>
+    </li>
+    <li>
+      
+
+<a href="https://www.instagram.com/papamurphys/channel/" rel="noreferrer" target="_blank" class='heading-standred block' aria-label="Instagram_white.svg">
+    <img src="/globalassets/icons/instagram_white.svg" alt="Instagram_white.svg" height="auto" width="auto" class="mx-auto" />
+</a>
+    </li>
+    <li>
+      
+
+<a href="https://www.pinterest.com/papamurphys/" rel="noreferrer" target="_blank" class='heading-standred block' aria-label="Pinterest_white.svg">
+    <img src="/globalassets/icons/pinterest_white.svg" alt="Pinterest_white.svg" height="auto" width="auto" class="mx-auto" />
+</a>
+    </li>
+</ul>
+
+        </div>
+    </div>
+    <div class="flex flex-col items-center justify-between w-full pt-2 md:pt-0 md:items-end md:flex-row lg:pt-2">
+      <div class="text-sm order-2 pt-2 text-center md:text-left md:order-1 md:pt-0">
+          <p data-cy="copyright">Papa Murphy&#x2019;s International 2023 All Rights Reserved</p>
+      </div>
+      <div class="md:order-2 hidden md:block lg:hidden" data-cy="mobile-app-links" style="margin-top: -40px;">
+        <p class="h2 text-20 text-white font-bold normal-case mb-0.75">Get Our Mobile App</p>
+        <a class="-external inline-flex items-center mb-0.75" href="https://apps.apple.com/us/app/papa-murphys-take-bake-pizza/id1406873399" target="_blank" rel="noreferrer">
+<svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.22 1.08C14.1592 2.21506 13.7311 3.29959 13 4.17C12.2722 5.04453 11.239 5.60941 10.11 5.75C10.0394 5.75712 9.96812 5.74913 9.90085 5.72657C9.83359 5.70401 9.7719 5.6674 9.71987 5.61916C9.66785 5.57092 9.62669 5.51216 9.59913 5.44679C9.57156 5.38141 9.55822 5.31092 9.56 5.24C9.63618 4.12993 10.0754 3.07574 10.81 2.24C11.5495 1.40381 12.532 0.819881 13.62 0.57C13.6943 0.554762 13.7712 0.556643 13.8447 0.575501C13.9182 0.594359 13.9864 0.6297 14.0442 0.678845C14.1021 0.72799 14.1479 0.78965 14.1784 0.859153C14.2088 0.928657 14.2231 1.00418 14.22 1.08ZM16.0911 11.125C15.7542 11.7969 15.5792 12.5384 15.58 13.29C15.5784 14.1619 15.8163 15.0175 16.2677 15.7635C16.7191 16.5094 17.3668 17.117 18.14 17.52C18.245 17.5774 18.3259 17.6705 18.3681 17.7824C18.4103 17.8943 18.411 18.0176 18.37 18.13C18.0247 19.0729 17.5645 19.9696 17 20.8C16.08 22.12 15.07 23.44 13.61 23.47C12.896 23.4847 12.4188 23.2793 11.9222 23.0656C11.4033 22.8424 10.8633 22.61 10.01 22.61C9.12661 22.61 8.58179 22.8451 8.0514 23.0739C7.57912 23.2776 7.11827 23.4765 6.44 23.5C5 23.55 3.91 22.06 3 20.74C1.18 18 -0.250002 13.1 1.67 9.76001C2.11747 8.94805 2.76864 8.26657 3.55942 7.78263C4.3502 7.2987 5.25334 7.02898 6.18 7.00001C6.96486 7.00001 7.74971 7.3143 8.43943 7.59049C8.98 7.80695 9.46212 8.00001 9.84 8.00001C10.1757 8.00001 10.6257 7.82324 11.1502 7.61723C11.9692 7.2955 12.9697 6.90247 14 7.00001C14.681 7.03215 15.3489 7.19894 15.9651 7.49073C16.5813 7.78252 17.1336 8.19353 17.59 8.70001C17.6342 8.75122 17.6675 8.81085 17.688 8.8753C17.7084 8.93975 17.7156 9.00769 17.7091 9.07499C17.7025 9.1423 17.6824 9.20758 17.6499 9.26688C17.6174 9.32618 17.5732 9.37828 17.52 9.42001C16.9173 9.86914 16.4279 10.453 16.0911 11.125Z" fill="currentColor"/>
+</svg>
+          <span class="link-text ml-0.75" data-cy="store-text">App Store</span>
+          <span class="sr-only">External Link</span>
+        </a>
+        <br>
+        <a class="-external inline-flex items-center" href="https://play.google.com/store/apps/details?id=com.olo.papamurphys&hl=en_US&gl=US" target="_blank" rel="noreferrer">
+<svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 18C4 18.55 4.45 19 5 19H6V22.5C6 23.33 6.67 24 7.5 24C8.33 24 9 23.33 9 22.5V19H11V22.5C11 23.33 11.67 24 12.5 24C13.33 24 14 23.33 14 22.5V19H15C15.55 19 16 18.55 16 18V8H4V18ZM1.5 8C0.67 8 0 8.67 0 9.5V16.5C0 17.33 0.67 18 1.5 18C2.33 18 3 17.33 3 16.5V9.5C3 8.67 2.33 8 1.5 8ZM18.5 8C17.67 8 17 8.67 17 9.5V16.5C17 17.33 17.67 18 18.5 18C19.33 18 20 17.33 20 16.5V9.5C20 8.67 19.33 8 18.5 8ZM13.53 2.16L14.83 0.86C15.03 0.66 15.03 0.35 14.83 0.15C14.63 -0.05 14.32 -0.05 14.12 0.15L12.64 1.63C11.85 1.23 10.95 1 10 1C9.04 1 8.14 1.23 7.34 1.63L5.85 0.15C5.65 -0.05 5.34 -0.05 5.14 0.15C4.94 0.35 4.94 0.66 5.14 0.86L6.45 2.17C4.97 3.26 4 5.01 4 7H16C16 5.01 15.03 3.25 13.53 2.16ZM8 5H7V4H8V5ZM13 5H12V4H13V5Z" fill="currentColor"/>
+</svg>
+          <span class="link-text ml-0.75" data-cy="store-text">Google Play Store</span>
+          <span class="sr-only">External Link</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</footer>
+
+<script src="/vendors.js?ver=2021.11.0.0"></script>
+<script src="/index.js?ver=2021.11.0.0"></script>
+
+</html>

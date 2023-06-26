@@ -38,25 +38,87 @@
   //Warm up/ 6-5
   // //Write a function, makeUpperCase, that takes in an input and returns the input in uppercase if it is a string.
   // If the input is not a string, return false.
-  function makeUpperCase(input) {
-    if (typeof input === 'string') {
-      return input.toUpperCase(input)
-    } else {
-      return false
-    }
-  }
+  // function makeUpperCase(input) {
+  //   if (typeof input === 'string') {
+  //     return input.toUpperCase(input)
+  //   } else {
+  //     return false
+  //   }
+  // }
   // take in a value that if it is a string, we get a return of that value and uppercase it. If it's not a string, we want a return of false.
   //------------
   //check if input is string
     //if string return upper case version
   // otherwise return false
 
-  console.log(makeUpperCase('cat')); // returns 'CAT'
-  console.log(makeUpperCase('DoG')); // returns 'DOG'
-  console.log(makeUpperCase('CODEUP')); // returns 'CODEUP'
-  console.log(makeUpperCase(54)); // returns false
-  console.log(makeUpperCase(true)); // returns false
-  console.log(makeUpperCase(null)); // returns false
+  // console.log(makeUpperCase('cat')); // returns 'CAT'
+  // console.log(makeUpperCase('DoG')); // returns 'DOG'
+  // console.log(makeUpperCase('CODEUP')); // returns 'CODEUP'
+  // console.log(makeUpperCase(54)); // returns false
+  // console.log(makeUpperCase(true)); // returns false
+  // console.log(makeUpperCase(null)); // returns false
+
+//============================================= June 26th, Monday, Week 6?? warm-up ======================
+
+  const salesData = [
+    {
+      month: 'January',
+      totalItemsSold: 0
+    },
+    {
+      month: 'February',
+      totalItemsSold: 5
+    },
+    {
+      month: 'March',
+      totalItemsSold: 2
+    },
+    {
+      month: 'April',
+      totalItemsSold: 10
+    },
+    {
+      month: 'May',
+      totalItemsSold: 30
+    }
+  ];
+
+  //---- walkthrough-----//
+//------------this isn't proper as it is only specific to the array above. Doesn't cover an array with less than 4 objects or up to 200 objects============//
+  // for
+  // let sum = 0;
+  //
+  // function returnTotalSales(salesData) {
+  //   for (let i = 0; i < salesData.lenght; i += 1) {
+  //     sum += salesData[i].totalItemsSold;
+  //   }
+  //   return sum
+  // }
+  //
+  // console.log(returnTotalSales());
+
+
+  // for each
+  // let sum = 0;
+  // salesData.forEach(element) => {
+  //   sum += element.totalItemsSold;
+  // });
+  //
+
+
+
+
+
+  // const total = salesData[0].totalItemsSold +
+  //         salesData[1].totalItemsSold +
+  //         salesData[2].totalItemsSold +
+  //         salesData[3].totalItemsSold +
+  //         salesData[4].totalItemsSold;
+  // console.log(total);
+
+
+
+
 
 
 

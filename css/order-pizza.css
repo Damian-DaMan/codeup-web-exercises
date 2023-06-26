@@ -1,0 +1,19 @@
+.container-fluid.ds-hero {
+    min-height: 30vh;
+    background-image: url("../img/slice.webp");
+    background-position: center center;
+    background-size: cover;
+}
+
+
+{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6D6D6D;
+    color: black;
+}
+
