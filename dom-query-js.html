@@ -29,6 +29,11 @@
 <button class="list-change">Modify List</button>
 <button class="p-change">Modify Paragraph</button>
 
+
+
+
+
+
 <script>
     (function () {
         "use strict";
@@ -76,11 +81,24 @@
         const listBtn = document.querySelector('.list-change')
         const paraBtn = document.querySelector('.p-change')
 
+
         //on click functions
         mainBtn.addEventListener('click', mainChange)
         subBtn.addEventListener('click', subChange)
         listBtn.addEventListener('click', listChange)
         paraBtn.addEventListener('click', paraChange)
+
+
+        // bonus
+        document.addEventListener('keyup', (e) => {
+            console.log(`the code for the key you just pressed is ${e.code}`)
+            console.log(e);
+            if(e.code === "KeyG") {
+                document.body.style.backgroundColor = "purple";
+            }
+        });
+
+
 
     })();
 </script>
