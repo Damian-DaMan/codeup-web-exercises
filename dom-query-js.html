@@ -24,52 +24,63 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+<button class="main-change">Modify Main Header</button>
+<button class="sub-change">Modify Sub Header</button>
+<button class="list-change">Modify List</button>
+<button class="p-change">Modify Paragraph</button>
 
 <script>
     (function () {
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
-        const mainHeader = document.getElementById('main-header')
-        console.log(mainHeader);
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+        const mainChange = () => {
+            // TODO: Uncomment next line and get the main header element by id
+            var mainHeader = document.getElementById('main-header');
 
-        mainHeader.innerHTML = "JavaScript is Cool";
-
-        // TODO: Uncomment the next line and get the sub header element by id
-        const subHeader = document.getElementById('sub-header');
-        console.log(subHeader);
-
-        // TODO: Set the text color of subHeader to blue
-        // document.getElementById('sub-header').style.color = 'blue';
-        subHeader.style.color = 'blue'
-
-        // TODO: Uncomment the next line and get all list items
-        const listItems = document.getElementsByTagName('li');
-        console.log(listItems);
-        // TODO: Set text color on every other list item to grey
-
-        for (let i = 0; i < listItems.length; i += 2) {
-            if(listItems[i].getAttribute('data-dbid') == 1) {
-
-        //         // TODO: Set text color of li with dbid = 1 to blue
-
-                listItems[i].style.color = 'blue'
-                continue;
-            }
-            listItems[i].style.color = 'lime';
+            // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+            mainHeader.innerHTML = 'JavaScript is Cool'
         }
-s
 
+        const subChange = () => {
+            // TODO: Uncomment the next line and get the sub header element by id
+            var subHeader = document.getElementById('sub-header');
+            // TODO: Set the text color of subHeader to blue
+            subHeader.style.color = 'blue'
+        }
 
+        const listChange = () => {
+            // TODO: Uncomment the next line and get all list items
+            var listItems = document.getElementsByTagName('li');
+            // TODO: Set text color on every other list item to grey
+            for (let list of listItems) {
+                const id = list.getAttribute('data-dbid');
+                if (id % 2 == 0) {
+                    list.style.color = 'grey'
+                } else if (id == 1) {
+                    // TODO: Set text color of li with dbid = 1 to blue
+                    list.style.color = 'blue'
+                }
+            }
+        }
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.getElementsByClassName('sub-paragraph');
+        const paraChange = () => {
+            // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+            var subParagraphs = document.getElementsByClassName('sub-paragraph');
+            // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+            subParagraphs[0].innerHTML = 'Mission Accomplished'
+        }
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        //selected buttons
+        const mainBtn = document.querySelector('.main-change')
+        const subBtn = document.querySelector('.sub-change')
+        const listBtn = document.querySelector('.list-change')
+        const paraBtn = document.querySelector('.p-change')
 
-        subParagraphs[0].innerText = "Mission Accomplished!"
-
+        //on click functions
+        mainBtn.addEventListener('click', mainChange)
+        subBtn.addEventListener('click', subChange)
+        listBtn.addEventListener('click', listChange)
+        paraBtn.addEventListener('click', paraChange)
 
     })();
 </script>
