@@ -21,7 +21,7 @@ $(() => {
 
             if (konamiCodeIndex === konamiCode.length) {
                 // Konami code entered successfully, perform desired action here
-                audio.play();
+                alertSound.play();
                 alert('You have added 30 lives!');
                 document.body.style.backgroundColor = 'purple';
             }
@@ -29,7 +29,9 @@ $(() => {
             konamiCodeIndex = 0;
         }
     }
-let audio = new Audio(/);
+
+
+let alertSound = new Audio('../alert.mp3');
     document.addEventListener('keydown', konamiCodeHandler);
 
 
