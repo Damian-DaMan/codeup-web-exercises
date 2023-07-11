@@ -1,0 +1,18 @@
+p, dt {
+    font-weight: bold;
+}
+
+dl, dd {
+    font-size: 0.9rem;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+h1 {
+    text-align: center;
+    color: forestgreen;
+}
+.invisible {
+    visibility: hidden;
+}
