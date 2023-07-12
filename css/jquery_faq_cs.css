@@ -16,3 +16,12 @@ h1 {
 .invisible {
     visibility: hidden;
 }
+.yellow {
+    background-color: yellow;
+}
+.bold {
+    font-weight: bold;
+}
+.blue {
+    color: blue;
+}

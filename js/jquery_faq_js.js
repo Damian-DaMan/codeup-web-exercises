@@ -75,34 +75,114 @@ $(() => {
 
 
 
-    // Traversing using jQuery #3
+    // Traversing exercise using jQuery #3
         // Add click event listener to the button
     $(document).on('click', '#highlightButton', function(e) {
         // Select the last list item in each unordered list and modify the background color
         $('ul li:last-child').css('background-color', 'yellow');
     });
 
-    // question #4
-    // When any h3 is clicked, the lis underneath it should be bolded. Use font-weight: bold to achieve this.
 
-    // my attempt
-    // $('h3').on('click', (e) => {
-    //     $(e.target).
+//walkthrough on question above using JS
+
+    //make some variables...
+    // const yellowButton = document.querySelector('#highlightButton');
+    // const ulElements = document.querySelectorAll('ul');
+    // const h3Elements = document.querySelectorAll('h3');
+    // const liElements = document.querySelectorAll('li');
+    // //functions in the middle
+    // function handleMakeYellowClick(e) {
+    //     ulElements.forEach(ulElement) => {
+    //         ulElement.lastElementChild.classList.add('yellow');
+    //     }
+    // }
+    // function handleMakeBlueclick(e) {
+    //     const clickedParent = e.target.parentElement;
+    //     clickedParent.firstElementChild.classList.add('.blue')
+    // }
+    // function handleMakeFontBold(e) {
+    //    const liElementCollection = e.target.nextElementSibling.children;
+    //    Array.from(liElementCollection).forEach(liElement) => {
+    //        liElement.classList.add('.bold');
+    //     });
+    // }
+    //
+    // //events down at the bottom
+    // yellowButton.addEventListener('click', handleMakeYellowClick);
+    //
+    // liElements.forEach((liElement) => {
+    //
     // })
 
-    // corrected code
-    // $('h3').on('click', (e) => {
-    //     $(e.target).nextAll('ul').first().find('li').css('font-weight', 'bold');
-    // });
+
+    // question #4
+    // When any h3 is clicked, the lis underneath it should be bolded. Use font-weight: bold to achieve this.
 
     $('h3').on('click', function() {
         $(this).nextUntil('h3').css('font-weight', 'bold');
     });
 
+
+//  question #5
     $('li').on('click', function() {
         $(this).parent().find('li:first').css('color', 'blue');
     });
 
+
+    //bonus in JS
+    // Variables
+    const allPhotosContainer = document.querySelector('.container');
+    const swapButton = document.querySelectorAll('.swap-btn');
+
+
+
+    // Functions
+    function handleSwapClick (e) {
+        const clickedButton = e.target;
+        const singleImageDiv = clickedButton.parentElement;
+        //if left button is clicked
+        // swap left two photos
+        if(/* left button clicked */ singleImageDiv === allPhotosContainer.firstElementChild) {
+            swapLeftTwoPhotos();
+        }
+        //if right button is clicked
+        // swap right two photos
+        else if(/* right button clicked*/ singleImageDiv === allPhotosContainer.lastElementChild) {
+            swapRightTwoPhotos();
+        }
+        // //if middle button is clicked
+        // // either swap left two or right two randomly
+        else {
+            Math.random() < 0.5 ? swapLeftTwoPhotos() : swapRightTwoPhotos;
+        }
+    }
+
+    function swapLeftTwoPhotos(e) {
+        //variables
+        const leftPhoto = allPhotosContainer.firstElementChild.firstElementChild.firstElementChild;
+        const middlePhoto = allPhotosContainer.querySelector('div:nth-child(2) img');
+        const tempPhotoSrc = leftPhoto.src;
+
+        //swap the src from both photos
+        leftPhoto.src = middlePhoto.src;
+        middlePhoto.src = tempPhoto.src;
+    }
+
+    function swapRightTwoPhotos(e) {
+        //variables
+        const rightPhoto = allPhotosContainer.firstElementChild.firstElementChild.firstElementChild;
+        const middlePhoto = allPhotosContainer.querySelector('div:nth-child(2) img');
+        const tempPhotoSrc = leftPhoto.src;
+
+        //swap the src from both photos
+        rightPhoto.src = middlePhoto.src;
+        middlePhoto.src = tempPhoto.src;
+    }
+
+    // eventListeners
+    swapButton.forEach((swapButton) => {
+        swapButton.addEventListener('click', handleSwapClick);
+    });
 
 
 
