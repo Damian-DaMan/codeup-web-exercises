@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapbox API</title>
+<!--  API KEY-->
+  <script src="js/keys.js"></script>
+<!--Geocoder / Reverse Geocoder functions? -->
+  <script src="js/mapbox-geocoder-utils.js"></script>
+
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+
+
+</head>
+<body>
+
+<!--<input class="address-input" type="text">-->
+<!--Enter address form-->
+<form>
+  <label for="address-input">Enter Address:</label><br>
+  <input type="text" id="address-input"><br><br>
+  <input id="input-btn" type="submit" value="Submit">
+</form>
+<!--zoom select option -->
+<label for="zoom">Zoom Level</label>
+<select name="zoom" id="zoom">
+  <option value="5">5</option>
+  <option selected value="10">10</option>
+  <option value="15">15</option>
+  <option value="20">20</option>
+</select>
+<!--div class holding our map-->
+<div class="container" id='map' style='width: 100%; height: 400px;'></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="js/mapbox-api.js"></script>
+</body>
+</html>
