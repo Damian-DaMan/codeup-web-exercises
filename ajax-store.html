@@ -26,6 +26,21 @@
     (function () {
         "use strict";
         // TODO: Create an AJAX GET request for the file under data/inventory.json
+        // console log the data so you know how to traverse the data for later
+
+        // walkthrough with STEVE
+        $.ajax('data/inventory.json').done((data) => {
+            console.log(data);
+            appendInventory(data);
+        })
+
+        function appendInventory(inventoryList) {
+            for(const inventoryItem of inventoryList) {
+                const tableRow = document.createElement('tr');
+                tableRow.innerHTML = `
+                <td>${}</td>`
+            }
+        }
 
         // function onSuccess(data, status, jqXhr) {
         //     // display the requested data to the user
