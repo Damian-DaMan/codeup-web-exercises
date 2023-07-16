@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Mapbox API</title>
-  <!--  API KEY-->
-  <script src="js/keys.js"></script>
-  <!--Geocoder / Reverse Geocoder functions? -->
+    <meta charset="UTF-8">
+    <title>Weather Project</title>
+    <!--            API KEYS-->
+    <script src="js/keys.js"></script>
 
+    <!--Geocoder / Reverse Geocoder functions? -->
+    <script src="js/mapbox-geocoder-utils.js"></script>
 
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet'/>
+    <!--    Mapbox stuff-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet'/>
+
+    <!--    Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--                CSS LINK-->
+    <link rel="stylesheet" href="css/weather_map.css">
 
 
 </head>
 <body>
 <!--<input class="address-input" type="text">-->
 <!--Enter address form-->
-<form>
-  <label for="address-input">Enter Address:</label><br>
-  <input type="text" id="address-input"><br><br>
-  <input id="input-btn" type="submit" value="Submit">
-</form>
-<!--zoom select option -->
-<label for="zoom">Zoom Level</label>
-<select name="zoom" id="zoom">
-  <option value="5">5</option>
-  <option selected value="10">10</option>
-  <option value="15">15</option>
-  <option value="20">20</option>
-</select>
-<!--div class holding our map-->
-<div class="container" id='map' style='width: 100%; height: 400px;'></div>
 
-<div class="buttons">
-  <button id="fav-restaurant">Fav Restaurant</button>
-</div>
+<!--Bootstrap nav bar-->
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand">Navbar</a>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!--            You need to weave this in the nav bar above-->
+<!--<nav>-->
+<!--    <form>-->
+<!--        <label for="address-input">Enter Address:</label><br>-->
+<!--        <input type="text" id="address-input"><br><br>-->
+<!--        <input id="input-btn" type="submit" value="Submit">-->
+<!--    </form>-->
+<!--    &lt;!&ndash;zoom select option &ndash;&gt;-->
+<!--    <label for="zoom">Zoom Level</label>-->
+<!--    <select name="zoom" id="zoom">-->
+<!--        <option value="5">5</option>-->
+<!--        <option selected value="10">10</option>-->
+<!--        <option value="15">15</option>-->
+<!--        <option value="20">20</option>-->
+<!--    </select>-->
+<!--</nav>-->
+
+<main>
+    <!--div class holding our map-->
+    <div class="container" id='map' style='width: 100%; height: 400px;'></div>
+
+    <div class="buttons">
+        <button id="fav-restaurant">Fav Restaurant</button>
+    </div>
+</main>
 
 
+<!--            jQuery CDN link-->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-<script src="js/mapbox_maps_api.js"></script>
-
-<script src="js/mapbox-geocoder-utils.js"></script>
+<!--                JS LINKED FILE-->
+<script src="js/weather_map.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
