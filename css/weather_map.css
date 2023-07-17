@@ -16,12 +16,12 @@ root {
 
 }
 
-.weatherCard {
-    width: 90%;
-    max-width: 470px;
-    background: -moz-linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
-}
+/*.weatherCard {*/
+/*    width: 90%;*/
+/*    max-width: 470px;*/
+/*    background: -moz-linear-gradient(135deg, #00feba, #5b548a);*/
+/*    color: #fff;*/
+/*    border-radius: 20px;*/
+/*    padding: 40px 35px;*/
+/*    text-align: center;*/
+/*}*/
