@@ -12,18 +12,17 @@ $(() => {
 
     const apiUrl = `${OPEN_WEATHER_URL}?lat=${SAN_ANTONIO_COORDS[1]}&lon=${SAN_ANTONIO_COORDS[0]}&units=imperial&appid=${OPEN_WEATHER_APPID}`;
 
+
+
 //  bread and butter to pull weather API data below
     function getWeatherData() {
         $.ajax({
             url: apiUrl,
             method: 'GET',
         }).done((data) => {
-            renderWeatherCard(data);
+            console.log(data);
+
         })
-    }
-
-    function renderWeatherCard(data) {
-
     }
 
 
@@ -42,6 +41,16 @@ $(() => {
 
         return new mapboxgl.Map(mapOptions);
     }
+
+
+
+
+
+
+
+
+
+
 
 
     // Events
