@@ -3,8 +3,9 @@
     "use strict";
 
     // Global Variables =========================================
-
-    const map = initializeMap();
+    mapboxgl.accessToken = MAPBOX_TOKEN
+    let marker;
+    // const marker = createMarker();
     // const marker = createMarker();
     // const apiUrl = `${OPEN_WEATHER_URL}?lat=${SAN_ANTONIO_COORDS[1]}&lon=${SAN_ANTONIO_COORDS[0]}&units=imperial&appid=${OPEN_WEATHER_APPID}`;
 
@@ -73,32 +74,40 @@
 
     //     FUNCTIONS with MAPBOX ===================================
 
-    // Keep this
-    function initializeMap() {
-        mapboxgl.accessToken = MAPBOX_TOKEN;
-
-        const mapOptions = {
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v12',
-            zoom: 10,
-            center: [-98.4916, 29.4252],
-        }
-
-        return new mapboxgl.Map(mapOptions);
-    }
+    // Produces map
+    //creating the map
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-98.4916, 29.4252], // starting position [lng, lat]
+        zoom: 10, // starting zoom
+    });
+    map.addControl(new mapboxgl.NavigationControl());
 
 
     // Creates a marker
-    function createMarker(map) {
-        map.center
-        const marker = new mapboxgl.Marker()
-            .setLngLat(latLng)
+    const createMarker = (lat, lng) => {
+        marker = new mapboxgl.Marker()
+            .setLngLat([lng, lat])
             .addTo(map);
+
     }
 
 
     // Events ====================================================
 
+    map.on('click', (e) =>{
+        // console.log(e);
+
+        const lat = e.lngLat.lat
+        const lng = e.lngLat.lng
+        console.log(lat, lng);
+        if(marker) {
+            marker.remove();
+        }
+        createMarker(lat, lng);
+        fetchWeather(lat, lng, 'imperial', OPEN_WEATHER_APPID)
+    })
 
     // searchBox.addEventListener('input', (e) => {
     //     console.log(e.target.value);
@@ -117,8 +126,6 @@
 
     fetchWeather(29.4252, -98.4916, 'imperial', OPEN_WEATHER_APPID)
 
-    // Brings up the map on launch
-    initializeMap();
 
 
 })();
