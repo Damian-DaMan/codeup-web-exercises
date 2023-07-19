@@ -21,7 +21,7 @@
 
     fetchWeather();
 
-    // function to render cards dynamically on page
+    // function to render cards on html
     const getForecastCards = (data) => {
         let html = '';
         const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
