@@ -6,10 +6,6 @@
     mapboxgl.accessToken = MAPBOX_TOKEN
     let marker;
     let cords = []
-    // const apiUrl = `${OPEN_WEATHER_URL}?lat=${SAN_ANTONIO_COORDS[1]}&lon=${SAN_ANTONIO_COORDS[0]}&units=imperial&appid=${OPEN_WEATHER_APPID}`;
-
-    let searchBox = document.querySelector('#user-input');
-    let searchBtn = document.querySelector('#search');
 
     // this gets all the information we need to even use the weather app
     const fetchWeather = (lat, lon, units, key) => {
