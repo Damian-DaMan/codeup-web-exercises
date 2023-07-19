@@ -92,8 +92,6 @@
     }
 
 
-
-
     // function to take an address(our input), and create a new marker, then call reverse geo with our coords, and fetch weather
     const geocodeAddressMarker = (address, token) => {
         geocode(address, token).then((res) => {
@@ -165,13 +163,13 @@
 
     // Events ====================================================
     //             This code below works!
-    map.on('click', (e) =>{
+    map.on('click', (e) => {
         // console.log(e);
 
         const lat = e.lngLat.lat
         const lng = e.lngLat.lng
         console.log(lat, lng);
-        if(marker) {
+        if (marker) {
             marker.remove();
         }
         createMarker(lat, lng);
@@ -179,13 +177,8 @@
     })
 
 
-
-
-
-
     // Run at the start of page load ================================
     fetchWeather(29.4252, -98.4916, 'imperial', OPEN_WEATHER_APPID)
-
 
 
 })();
