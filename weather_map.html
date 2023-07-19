@@ -38,21 +38,15 @@
             <a class="navbar-brand">Weather Project</a>
             <!--        this form should link to allow you to geocode anything typed-->
             <form class="d-flex" role="search">
-                <input id="user-input" class="form-control me-2 searchMap" type="search"
-                       placeholder="Enter location Name"
-                       spellcheck="false" aria-label="Search">
-                <button id="search" class="btn btn-outline-primary" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Enter Location Name" aria-label="Search"
+                       id="address-input">
+                <button class="btn btn-outline-primary" type="submit" id="input-btn">Search</button>
+<!--                <input id="user-input" class="form-control me-2 searchMap" type="search"-->
+<!--                       placeholder="Enter location Name"-->
+<!--                       spellcheck="false" aria-label="Search">-->
+<!--                <button id="search" class="btn btn-outline-primary" type="submit">Search</button>-->
             </form>
         </div>
-        <!--            You need to weave this in the nav bar above                                  this is part of the rubric-->
-        <!--zoom select option -->
-        <!--    <label for="zoom">Zoom Level</label>-->
-        <!--    <select name="zoom" id="zoom">-->
-        <!--        <option value="5">5</option>-->
-        <!--        <option selected value="10">10</option>-->
-        <!--        <option value="15">15</option>-->
-        <!--        <option value="20">20</option>-->
-        <!--    </select>-->
     </nav>
     <!--            end nav bar-->
     <!--                    heart of the cards-->
@@ -71,7 +65,7 @@
 
 <!--                Footer-->
 <footer>
-    <div class="logo-container d-flex justify-content-center gap-3">
+    <div class="logo-container d-flex justify-content-center gap-3 bg-warning">
         <img
                 src="../images/openweatherlogo.png"
                 alt="open weather map logo"

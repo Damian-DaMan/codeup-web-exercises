@@ -92,8 +92,79 @@
     }
 
 
-    // Events ====================================================
 
+
+    // function to take an address(our input), and create a new marker, then call reverse geo with our coords, and fetch weather
+    const geocodeAddressMarker = (address, token) => {
+        geocode(address, token).then((res) => {
+            if (marker) {
+                marker.remove()
+            }
+            console.log(res)
+            marker = new mapboxgl.Marker()
+                .setLngLat(res)
+                .addTo(map);
+            map.setCenter(res);
+            map.setZoom(10);
+            coords = [res[0], res[1]]
+            console.log(coords)
+            reverseGeoAddress(res[1], res[0], MAPBOX_TOKEN)
+            fetchWeather(res[1], res[0], 'imperial', OPEN_WEATHER_APPID)
+        })
+    }
+
+    //click event for input submit to capture the value, then pass it in to geocodeAddressMarker
+    $('#input-btn').click(e => {
+        e.preventDefault()
+        //capturing input
+        const inputAddress = $('#address-input').val()
+        console.log(inputAddress)
+        //run geocode function with input
+        geocodeAddressMarker(inputAddress, MAPBOX_TOKEN)
+        // clear input field
+        $('#address-input').val('')
+    })
+
+    const reverseGeoAddress = (lat, lng, token) => {
+        reverseGeocode({lng: lng, lat: lat}, token).then(function (results) {
+            // logs the address
+            // console.log(results.split(','));
+            //splits the string to get just the city and state
+            const city = results.split(',')[1]
+            const state = results.split(',')[2].replace(/[0-9]/g, '');
+            // console.log(city, state, lat, lng);
+            //create markup for location
+            const locationHTML = `
+            <h1>${city}, ${state}</h1>
+            `
+            //push markup to selected container
+            $('.city-state').html(locationHTML)
+        });
+    }
+
+    // geolocation success function, get coords then fetch weather and render cards, and reverse geo for the address
+    const successCallback = (position) => {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+        fetchWeather(lat, lng, 'imperial', OPEN_WEATHER_APPID)
+        reverseGeoAddress(lat, lng, MAPBOX_TOKEN)
+        marker = new mapboxgl.Marker()
+            .setLngLat([lng, lat])
+            .addTo(map);
+        map.setCenter([lng, lat]);
+        map.setZoom(10);
+    };
+
+    const errorCallback = (error) => {
+        console.log(error);
+    };
+
+    //Geolocation API, getCurrentPosition takes a success and failure callback
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+
+
+    // Events ====================================================
+    //             This code below works!
     map.on('click', (e) =>{
         // console.log(e);
 
@@ -107,21 +178,12 @@
         fetchWeather(lat, lng, 'imperial', OPEN_WEATHER_APPID)
     })
 
-    // searchBox.addEventListener('input', (e) => {
-    //     console.log(e.target.value);
-    // });
-    // searchBtn.addEventListener('click', () => {
-    // })
-    // map.on('mouseup', () => {
-    //     // getData(map);
-    // });
-    // map.on('click mouseup', () => {
-    //     // getData(map);
-    // });
+
+
+
 
 
     // Run at the start of page load ================================
-
     fetchWeather(29.4252, -98.4916, 'imperial', OPEN_WEATHER_APPID)
 
 
