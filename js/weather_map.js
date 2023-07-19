@@ -5,15 +5,13 @@
     // Global Variables =========================================
     mapboxgl.accessToken = MAPBOX_TOKEN
     let marker;
-    // const marker = createMarker();
-    // const marker = createMarker();
+    let cords = []
     // const apiUrl = `${OPEN_WEATHER_URL}?lat=${SAN_ANTONIO_COORDS[1]}&lon=${SAN_ANTONIO_COORDS[0]}&units=imperial&appid=${OPEN_WEATHER_APPID}`;
 
     let searchBox = document.querySelector('#user-input');
-
     let searchBtn = document.querySelector('#search');
 
-
+    // this gets all the information we need to even use the weather app
     const fetchWeather = (lat, lon, units, key) => {
         $.get("http://api.openweathermap.org/data/2.5/onecall", {
             APPID: key,
@@ -27,7 +25,7 @@
 
     fetchWeather();
 
-
+    // function to render cards dynamically on page
     const getForecastCards = (data) => {
         let html = '';
         const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -51,15 +49,15 @@
                 const currentMonth = month[date.getMonth()]
                 const currentDay = weekday[date.getDay()];
                 html += `
-<div class="card text-center">
+<div class="card text-center ">
   <div class="card-header">${currentDay}, ${currentMonth} ${currentDate}
   </div>
   <div class="card-body">
-    <h5 class="card-title">${minTemp} / ${maxTemp}</h5>
+    <h5 class="card-title">Max ${maxTemp} °F<hr>Min  ${minTemp} °F </h5>
     <img src="${weatherIcon}">
     <p class="card-text">${description}</p>
-    <p class="card-text">Humdity: ${humidity}</p>
-    <p class="card-text">Pressure: ${pressure}</p>
+    <p class="card-text">Humdity: ${humidity}%</p>
+    <p class="card-text">Pressure: ${pressure}hPA</p>
   </div>
   <div class="card-footer text-body-secondary">
    Go for a walk

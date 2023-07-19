@@ -30,53 +30,58 @@
 
 </head>
 <body>
+<div class="page-wrapper">
 
-<!--Bootstrap nav bar-->
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand">Weather</a>
-        <!--        this form should link to allow you to geocode anything typed-->
-        <form class="d-flex" role="search">
-            <input id="user-input" class="form-control me-2 searchMap" type="search" placeholder="Enter location Name"
-                   spellcheck="false" aria-label="Search">
-            <button id="search" class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+    <!--Bootstrap nav bar-->
+    <nav class="navbar bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand">Weather Project</a>
+            <!--        this form should link to allow you to geocode anything typed-->
+            <form class="d-flex" role="search">
+                <input id="user-input" class="form-control me-2 searchMap" type="search"
+                       placeholder="Enter location Name"
+                       spellcheck="false" aria-label="Search">
+                <button id="search" class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+        <!--            You need to weave this in the nav bar above                                  this is part of the rubric-->
+        <!--zoom select option -->
+        <!--    <label for="zoom">Zoom Level</label>-->
+        <!--    <select name="zoom" id="zoom">-->
+        <!--        <option value="5">5</option>-->
+        <!--        <option selected value="10">10</option>-->
+        <!--        <option value="15">15</option>-->
+        <!--        <option value="20">20</option>-->
+        <!--    </select>-->
+    </nav>
+    <!--            end nav bar-->
+    <!--                    heart of the cards-->
+    <div id="forecast" class="justify-content-around d-none d-md-flex card-box-shadow"></div>
+
+
+    <!--                    This is where the map is-->
+    <main>
+        <!--div class holding our map-->
+        <div class="container" id='map' style='width: 100%; height: 400px;'></div>
+        <div class="buttons">
+            <button id="fav-restaurant">CHANGE THIS SHIT</button>
+        </div>
+    </main>
+</div>
+
+<!--                Footer-->
+<footer>
+    <div class="logo-container d-flex justify-content-center gap-3">
+        <img
+                src="../images/openweatherlogo.png"
+                alt="open weather map logo"
+                class="logo-open-weather"
+        />
+        <img src="../images/mapbox-logo-black.svg"
+             class="logo-map-box"
+        >
     </div>
-<!--            You need to weave this in the nav bar above                                  this is part of the rubric-->
-    <!--zoom select option -->
-<!--    <label for="zoom">Zoom Level</label>-->
-<!--    <select name="zoom" id="zoom">-->
-<!--        <option value="5">5</option>-->
-<!--        <option selected value="10">10</option>-->
-<!--        <option value="15">15</option>-->
-<!--        <option value="20">20</option>-->
-<!--    </select>-->
-</nav>
-<!--            end nav bar-->
-<!--            Start of day cards-->
-<div id="forecast"></div>
-
-
-
-
-
-
-
-
-
-<!--                    This is where the map is-->
-<main>
-    <!--div class holding our map-->
-    <div class="container" id='map' style='width: 100%; height: 400px;'></div>
-
-    <div class="buttons">
-        <button id="fav-restaurant">CHANGE THIS SHIT</button>
-    </div>
-</main>
-
-
-
-
+</footer>
 <!--            jQuery CDN link-->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
